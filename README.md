@@ -36,7 +36,7 @@ resumes/
                 └── job_description.txt
 ```
 
-Set Resume Name (First Time Only)
+## Set Resume Name (First Time Only)
 
 Before creating your first resume, set your desired resume filename by editing `resume_name.txt` in the root directory:
 
@@ -78,7 +78,7 @@ The `master.tex` file is your **single source of truth**. It contains:
 
 ### Cleanup Script
 
-Remove LaTeX auxiliary files:
+When compiling the LaTeX, it will generate auxiliary file. This script removes them:
 
 ```bash
 ./cleanup.sh
@@ -86,55 +86,14 @@ Remove LaTeX auxiliary files:
 
 This removes `.aux`, `.log`, `.out`, `.synctex.gz` files while keeping `.tex` and `.pdf` files.
 
-### View All Job Applications
-
-List companies:
-
-```bash
-ls applications/
-```
-
-List roles for a company:
-
-```bash
-ls applications/google/
-```
-
-List versions for a role:
-
-```bash
-ls applications/google/software-engineering-intern/
-```
-
-Each version directory contains a tailored resume and job description.
 
 ## 📝 Best Practices
 
 1. **Always update master.tex first**: When you have a new experience or project, add it to `master.tex` before tailoring resumes
 2. **Keep job descriptions**: The `job_description.txt` file is automatically saved for your reference
-3. **Use custom resume names**: Specify a name when creating resumes (e.g., "name it Ri_Hong") to set it globally. Edit root `resume_name.txt` to change it for all resumes
-4. **Version control**: Commit your master resume and job-specific resumes to track changes
-5. **Manual edits**: You can always edit the resume `.tex` file directly, or edit root `resume_name.txt` to change the filename globally
+3. **Version control**: Commit your master resume and job-specific resumes to track changes
+4. **Manual edits**: You can always edit the resume `.tex` file directly, or edit root `resume_name.txt` to change the filename globally
 
-## 🔄 Updating the Master Resume
-
-When you need to add new experiences to the master:
-
-1. Edit `master.tex` directly
-2. Add the new experience/project in the appropriate section
-3. Don't worry about length - the master can be multiple pages
-4. When tailoring for jobs, the AI will automatically select the most relevant items
-
-## 🎨 LaTeX Formatting
-
-The resume uses custom LaTeX macros. Always preserve:
-
-- `\resumeSubheading` for work experiences
-- `\resumeProjectHeading` for projects
-- `\resumeItem` for bullet points
-- `\resumeItemListStart` / `\resumeItemListEnd` for lists
-
-See `master.tex` for examples of proper formatting.
 
 ## ❓ FAQ
 
