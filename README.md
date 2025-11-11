@@ -8,7 +8,7 @@ A LaTeX-based resume system that helps you maintain a master resume and automati
 resumes/
 ├── master.tex              # Master resume with ALL experiences and projects
 ├── resume_name.txt         # Global resume name (optional, defaults to "resume")
-├── jobs/                   # Job-specific resumes
+├── applications/           # Job-specific resumes
 │   └── {company}/          # Company directory (auto-created)
 │       └── {role}/         # Role directory (auto-created)
 │           └── {version}/  # Version directory (auto-created, starts at 1)
@@ -23,7 +23,7 @@ resumes/
 ```
 resumes/
 ├── resume_name.txt         # Contains: "Ri_Hong"
-└── jobs/
+└── applications/
     └── aws/
         └── backend-engineer-intern/
             ├── 1/
@@ -54,10 +54,10 @@ The AI will:
    - Otherwise, checks root `resume_name.txt` file
    - If neither exists, defaults to "resume"
    - The name applies to all generated resumes globally
-4. **Create** the directory structure: `jobs/{company}/{role}/{version}/`
-5. **Save** the job description to `jobs/{company}/{role}/{version}/job_description.txt`
+4. **Create** the directory structure: `applications/{company}/{role}/{version}/`
+5. **Save** the job description to `applications/{company}/{role}/{version}/job_description.txt`
 6. **Read** `master.tex` to see all available experiences
-7. **Generate** a tailored resume in `jobs/{company}/{role}/{version}/{resume_name}.tex`
+7. **Generate** a tailored resume in `applications/{company}/{role}/{version}/{resume_name}.tex`
 
 **Example:**
 
@@ -75,9 +75,9 @@ Please name this resume Ri_Hong
 
 **Result:**
 
-- First time (with "name it Ri_Hong"): Creates `jobs/google/software-engineering-intern/1/` with `Ri_Hong.tex`, saves "Ri_Hong" to root `resume_name.txt`
-- Second time (same role): Creates `jobs/google/software-engineering-intern/2/` with `Ri_Hong.tex` (uses global name)
-- Third time (different company, same global name): Creates `jobs/aws/backend-engineer/1/` with `Ri_Hong.tex`
+- First time (with "name it Ri_Hong"): Creates `applications/google/software-engineering-intern/1/` with `Ri_Hong.tex`, saves "Ri_Hong" to root `resume_name.txt`
+- Second time (same role): Creates `applications/google/software-engineering-intern/2/` with `Ri_Hong.tex` (uses global name)
+- Third time (different company, same global name): Creates `applications/aws/backend-engineer/1/` with `Ri_Hong.tex`
 
 **Custom Resume Names (Global Setting):**
 
@@ -92,7 +92,7 @@ That's it! Cursor handles everything automatically, including version management
 ### 2. Compile and Review
 
 ```bash
-cd jobs/google/software-engineering-intern/1
+cd applications/google/software-engineering-intern/1
 pdflatex Ri_Hong.tex  # or resume.tex if using default name
 ```
 
@@ -100,7 +100,7 @@ Or use your LaTeX editor to compile and view the PDF.
 
 **Note:**
 
-- If you have multiple versions for the same role, navigate to the specific version directory (e.g., `jobs/google/software-engineering-intern/2/`)
+- If you have multiple versions for the same role, navigate to the specific version directory (e.g., `applications/google/software-engineering-intern/2/`)
 - The filename matches the name in `resume_name.txt` (or "resume" if not specified)
 
 ## 📋 Master Resume (`master.tex`)
@@ -122,7 +122,7 @@ The `master.tex` file is your **single source of truth**. It contains:
    - Extracts company and role (or asks if unclear)
    - Determines the next version number
    - Determines resume name (from your request, root `resume_name.txt`, or defaults to "resume")
-   - Creates the directory structure `jobs/{company}/{role}/{version}/`
+   - Creates the directory structure `applications/{company}/{role}/{version}/`
    - Saves the job description
    - If you specified a new resume name, saves it to root `resume_name.txt` (global setting)
    - Generates a tailored resume with the global name
@@ -149,19 +149,19 @@ This removes `.aux`, `.log`, `.out`, `.synctex.gz` files while keeping `.tex` an
 List companies:
 
 ```bash
-ls jobs/
+ls applications/
 ```
 
 List roles for a company:
 
 ```bash
-ls jobs/google/
+ls applications/google/
 ```
 
 List versions for a role:
 
 ```bash
-ls jobs/google/software-engineering-intern/
+ls applications/google/software-engineering-intern/
 ```
 
 Each version directory contains a tailored resume and job description.
@@ -200,12 +200,12 @@ See `master.tex` for examples of proper formatting.
 A: No, keep one `master.tex` with everything. The system is designed to select from a single source of truth.
 
 **Q: What if a job directory already exists?**  
-A: Cursor will automatically create a new version. For example, if `jobs/google/software-engineer/1/` exists, it will create `jobs/google/software-engineer/2/`. This allows you to have multiple tailored resumes for the same role.
+A: Cursor will automatically create a new version. For example, if `applications/google/software-engineer/1/` exists, it will create `applications/google/software-engineer/2/`. This allows you to have multiple tailored resumes for the same role.
 
 **Q: How do I delete a job application?**  
-A: Delete the specific version directory: `rm -rf jobs/{company}/{role}/{version}/`  
-Or delete all versions for a role: `rm -rf jobs/{company}/{role}/`  
-Or delete all roles for a company: `rm -rf jobs/{company}/`
+A: Delete the specific version directory: `rm -rf applications/{company}/{role}/{version}/`  
+Or delete all versions for a role: `rm -rf applications/{company}/{role}/`  
+Or delete all roles for a company: `rm -rf applications/{company}/`
 
 **Q: Can I manually edit tailored resumes?**  
 A: Yes! The AI generates a starting point, but you can always edit the resume `.tex` file directly.
