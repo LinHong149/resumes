@@ -4,77 +4,201 @@ alwaysApply: true
 ---
 
 # 🎯 Purpose
-This repository contains a **LaTeX resume**.  
-Your task is to **automatically tailor `resume.tex`** when the user provides a job description, producing a clean, one-page, ATS-compatible `resume_tailored.tex`.
+
+This repository contains a **master LaTeX resume** (`master.tex`) with all experiences and projects.  
+Your task is to **automatically tailor resumes** for specific job applications by selecting and reordering content from the master resume.
+
+---
+
+## 📁 Repository Structure
+
+- `master.tex` - **Master resume** containing ALL experiences, projects, and skills (the single source of truth)
+- `resume_name.txt` - **Global resume name** (in root directory, optional, defaults to "resume")
+  - Contains a single line with the resume name (e.g., "Ri_Hong" or "resume")
+  - Used for all generated resume files across all jobs
+- `jobs/` - Directory containing job-specific resumes
+  - Each job has its own nested subdirectory: `jobs/{company}/{role}/{version}/`
+  - Contains:
+    - `{resume_name}.tex` (tailored resume LaTeX file)
+    - `{resume_name}.pdf` (compiled PDF, if generated)
+    - `job_description.txt` (original job posting)
+  - Version numbering: starts at `1` for new roles, increments for multiple resumes per role
 
 ---
 
 ## 🧠 Core Objectives
 
-### 1. Analyze the job description
-- Extract **role title**, **company**, and **key skills/technologies**.
-- Identify the **primary focus areas** (e.g., backend, ML, systems, frontend, infra).
-- Compare these keywords to the resume content.
+### 1. Reference the Master Resume
 
-### 2. Adapt and reorder content
-- Reorder **Experience** and **Projects** sections so the most relevant appear first.
-- Modify bullet points to highlight relevant skills, metrics, and impact.
-- Remove or shorten unrelated sections (e.g., robotics or unrelated coursework).
-- Never add experiences that do not exist — only **reword or rearrange**.
+- **ALWAYS** read `master.tex` as the source of truth for all available experiences and projects.
+- **NEVER** add experiences, projects, or skills that don't exist in `master.tex`.
+- You can only **select, reorder, reword, or remove** content from the master.
 
-### 3. Maintain structure and LaTeX integrity
+### 2. Analyze the job description
+
+- **Automatically extract** the **company name** and **role title** from the job description.
+  - If company or role cannot be clearly inferred, **ASK the user** to provide them explicitly.
+- Extract **key skills/technologies** and **primary focus areas** (e.g., backend, ML, systems, frontend, infra).
+- Create sanitized directory names:
+  - Company: lowercase, hyphens for spaces/special chars (e.g., "Meta" → "meta", "Google Cloud" → "google-cloud")
+  - Role: lowercase, hyphens for spaces/special chars (e.g., "Software Engineer" → "software-engineer")
+- **Determine version number**:
+  - Check if `jobs/{company}/{role}/` directory exists
+  - If it doesn't exist, use version `1`
+  - If it exists, find the highest existing version number `n` and use version `n + 1`
+  - Create directory structure: `jobs/{company}/{role}/{version}/`
+- **Determine resume file name**:
+  - Check if user specified a custom resume name in their request (e.g., "name it Ri_Hong" or "save as John_Doe")
+  - If specified, sanitize the name (replace spaces with underscores, remove special chars, keep alphanumeric and underscores/hyphens)
+  - If not specified, check if `resume_name.txt` exists in the root directory and read the name from there
+  - If neither exists, default to "resume"
+  - Save the resume name to `resume_name.txt` in the root directory (global setting for all resumes)
+- **Save the EXACT job description text** (verbatim, unmodified) to `jobs/{company}/{role}/{version}/job_description.txt`.
+  - **CRITICAL**: Do NOT summarize, edit, or modify the job description text in any way.
+  - Save it exactly as the user provided it, preserving all formatting, line breaks, and content.
+- Compare job requirements to content available in `master.tex`.
+
+### 3. Select and adapt content
+
+- **Select** the most relevant experiences and projects from `master.tex`.
+- **Reorder** sections so the most relevant appear first.
+- **Reword** bullet points to highlight relevant skills, metrics, and impact using job description keywords.
+- **Remove** or shorten less relevant content to fit one page.
+- Never add experiences that do not exist — only **select, reword, or rearrange** from master.
+
+### 4. Maintain structure and LaTeX integrity
+
 - Follow existing LaTeX macros strictly.
 - Do not break, rename, or redefine LaTeX commands or environments.
 - Preserve the header, education, and contact format.
 - Preserve macro usage such as `\resumeSubheading`, `\resumeItemListStart`, `\resumeItemListEnd`, and `\resumeItem`.
 
-### 4. Keep it concise and one page
+### 5. Keep it concise and one page
+
 - The final output must compile into **one page** on US Letter paper.
 - If too long, compress bullet points by merging phrases and removing less relevant details.
-- If too short, slightly expand or reuse highly relevant project/experience bullets for balance (without fabricating content).
+- If too short, include more relevant experiences/projects from master (without fabricating content).
 
-### 5. Output constraints
-- File edited: `resume.tex`
-- Output file: `resume_tailored.tex`
+### 6. Output constraints
+
+- **Source file**: `master.tex` (read-only reference)
+- **Target files**:
+  - `jobs/{company}/{role}/{version}/{resume_name}.tex` (the tailored resume for this job)
+    - Resume name is determined from user request, root `resume_name.txt` file, or defaults to "resume"
+    - Sanitize resume name: replace spaces with underscores, remove special chars (keep alphanumeric, underscores, hyphens)
+  - `jobs/{company}/{role}/{version}/job_description.txt` (the EXACT, unmodified job posting text as provided by the user)
+    - **MUST be saved verbatim** - no summarization, no editing, no modification whatsoever
+  - `resume_name.txt` (in root directory, optional: stores the global resume name)
+    - Contains a single line with the resume name (e.g., "Ri_Hong" or "resume")
+    - Used for all generated resume files across all jobs
+    - If user specifies a new name, update this global file
 - Ensure LaTeX compiles cleanly (balanced environments, no missing braces, no unmatched lists).
+- **Automatically create** the full directory structure (`jobs/{company}/{role}/{version}/`) if it doesn't exist.
+- **Version management**: Always check for existing versions and increment appropriately to allow multiple resumes per role.
+- **Resume naming**: All generated files (`.tex`, `.pdf`) use the same base name as specified in `resume_name.txt` or user request.
 
 ---
 
 ## 🧩 Workflow
 
-1. User provides job description (inline or via text file).  
-   Example:
-```
-Job: Software Engineering Intern, Meta
-Focus: Distributed Systems, Reliability, Python, Kubernetes
-```
-2. Tailor `resume.tex` accordingly:
-- Emphasize distributed systems, infra, and reliability experience.
-- Use wording that reflects job description keywords.
-- Move the most relevant experiences and projects to the top of their sections.
-- Keep education, awards, and contact sections unless told otherwise.
+1. **User provides job description** (paste the full job posting text).  
+   Optionally, user can specify a custom resume name (e.g., "name it Ri_Hong" or "save as John_Doe").
 
-3. Save final version as `resume_tailored.tex`.
+   Example:
+
+```
+Software Engineering Intern at Meta
+We're looking for someone with experience in distributed systems,
+reliability engineering, Python, and Kubernetes...
+[full job description]
+
+Please name this resume Ri_Hong
+```
+
+Or:
+
+```
+[Job description]
+
+Create a resume for this, save it as John_Doe
+```
+
+2. **Automatically extract and create**:
+
+   - Extract **company name** and **role title** from the job description
+     - If unclear, **ask the user** to provide company and role explicitly
+   - Sanitize names: lowercase, hyphens for spaces (e.g., "Meta" → "meta", "Software Engineer" → "software-engineer")
+   - Check for existing versions in `jobs/{company}/{role}/`
+     - If no directory exists, use version `1`
+     - If directory exists, find highest version `n` and use version `n + 1`
+   - Create directory structure: `jobs/{company}/{role}/{version}/`
+   - **Determine resume name**:
+     - Check if user specified a custom name in their request
+     - If specified, sanitize it (spaces → underscores, remove special chars) and save to root `resume_name.txt`
+     - If not specified, check root `resume_name.txt` file
+     - If neither exists, default to "resume"
+     - The resume name is global and applies to all generated resumes
+   - **Save the EXACT job description text** (verbatim, unmodified) to `jobs/{company}/{role}/{version}/job_description.txt`
+     - Preserve all text exactly as the user provided it - do NOT summarize or edit
+
+3. **Read master.tex** to understand all available experiences and projects.
+
+4. **Tailor the resume**:
+
+   - Select most relevant experiences/projects from `master.tex`
+   - Emphasize relevant skills and technologies from the job description
+   - Use wording that reflects job description keywords
+   - Move the most relevant experiences and projects to the top
+   - Keep education, awards, and contact sections unless told otherwise
+
+5. **Save files**:
+   - Save tailored resume to `jobs/{company}/{role}/{version}/{resume_name}.tex`
+     - Use the resume name from root `resume_name.txt` or user request (default: "resume")
+   - If user specified a new resume name, save it to root `resume_name.txt` (global setting)
+   - **Save the EXACT job description text** (verbatim, unmodified) to `jobs/{company}/{role}/{version}/job_description.txt`
+     - The job description file must contain the exact text the user pasted, with no summarization or modification
 
 ---
 
 ## ✅ Example Behavior
 
 **Input:**
+
 > Job: Backend Engineer Intern at AWS  
 > Focus: Go, Kubernetes, Terraform, Cloud Infrastructure
 
-**Expected Output Changes:**
-- Move cloud-related and backend-related projects/experiences higher.
-- Reword experience bullets to mention “Go”, “Terraform”, and “Kubernetes” where factually accurate.
-- Shorten unrelated research or non-backend items to keep the resume within one page.
+**Expected Process:**
+
+1. Extract: Company="AWS", Role="Backend Engineer Intern" → Sanitized: `aws` / `backend-engineer-intern`
+2. Check for existing versions in `jobs/aws/backend-engineer-intern/`
+   - If none exist, use version `1` → Directory: `jobs/aws/backend-engineer-intern/1/`
+   - If `1` exists, use version `2` → Directory: `jobs/aws/backend-engineer-intern/2/`
+3. Determine resume name (from user request, root `resume_name.txt`, or default to "resume")
+   - If user specified a new name, save it to root `resume_name.txt` (global setting)
+4. Save the EXACT job description text (verbatim, unmodified) to `jobs/aws/backend-engineer-intern/{version}/job_description.txt`
+5. Read `master.tex` to see all available experiences (Groq, Base Power, Walnote.ai, etc.)
+6. Select most relevant: Base Power (Go, Kubernetes, Temporal), Groq (Kubernetes, Terraform, GCP), HomeLab (Kubernetes, Terraform)
+7. Reorder to put cloud/infrastructure experiences first
+8. Reword bullets to emphasize "Go", "Terraform", "Kubernetes" where factually accurate
+9. Shorten or remove less relevant items (e.g., frontend-focused projects) to fit one page
+10. Save tailored resume to `jobs/aws/backend-engineer-intern/{version}/{resume_name}.tex`
 
 ---
 
 ## ⚙️ Implementation Notes
+
 - The AI acts as a **resume-tailoring assistant**.
 - The result should read naturally, emphasizing **action verbs, quantifiable results, and relevant technologies**.
-- Do not use placeholders like “X” or “Y”.
+- Do not use placeholders like "X" or "Y".
 - Do not fabricate new roles, companies, or achievements.
 - Always preserve factual accuracy and a professional tone.
+- **CRITICAL**: When saving `job_description.txt`, save the EXACT text the user provided. Do NOT summarize, edit, or modify it in any way. The file should be a verbatim copy of what the user pasted.
+- **Resume naming**:
+  - Users can specify a custom resume name in their request (e.g., "name it Ri_Hong", "save as John_Doe")
+  - The resume name is sanitized (spaces → underscores, special chars removed)
+  - Saved to `resume_name.txt` in the **root directory** (global setting for all resumes)
+  - All generated files (`.tex`, `.pdf`) across all jobs use this name as the base filename
+  - If not specified, checks root `resume_name.txt`, otherwise defaults to "resume"
+  - Users can manually edit root `resume_name.txt` to change the name globally
+
 ---
