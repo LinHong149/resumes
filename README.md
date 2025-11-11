@@ -36,73 +36,15 @@ resumes/
                 └── job_description.txt
 ```
 
-## 🚀 Quick Start
-
-### 0. Set Resume Name (First Time Only)
+Set Resume Name (First Time Only)
 
 Before creating your first resume, set your desired resume filename by editing `resume_name.txt` in the root directory:
 
 ```bash
-echo "Ri_Hong" > resume_name.txt
+echo "John_Doe" > resume_name.txt
 ```
 
-Or manually edit the file and add your desired name (e.g., "Ri_Hong", "John_Doe"). This name will be used for all generated resume files. If you don't set this, files will default to "resume".
-
-### 1. Paste Job Description
-
-Simply paste the full job posting into Cursor and ask it to tailor your resume. The resume name from `resume_name.txt` will be used automatically.
-
-The AI will:
-
-1. **Automatically extract** the company name and role title from the description
-   - If unclear, Cursor will **ask you** to provide the company and role explicitly
-2. **Determine version number**:
-   - If this is the first resume for this company/role, creates version `1`
-   - If versions already exist, finds the highest version `n` and creates version `n + 1`
-3. **Determine resume name** (global setting):
-   - Reads the name from root `resume_name.txt` file
-   - If the file doesn't exist, defaults to "resume"
-   - The name applies to all generated resumes globally
-4. **Create** the directory structure: `applications/{company}/{role}/{version}/`
-5. **Save** the job description to `applications/{company}/{role}/{version}/job_description.txt`
-6. **Read** `master.tex` to see all available experiences
-7. **Generate** a tailored resume in `applications/{company}/{role}/{version}/{resume_name}.tex`
-
-**Example:**
-
-```
-Paste the job description here:
-
-Software Engineering Intern at Google
-We're looking for someone with experience in distributed systems,
-Go, Kubernetes, and cloud infrastructure...
-
-[full job description]
-```
-
-**Result:**
-
-- Creates `applications/google/software-engineering-intern/1/` with `Ri_Hong.tex` (using name from `resume_name.txt`)
-- Second time (same role): Creates `applications/google/software-engineering-intern/2/` with `Ri_Hong.tex` (uses same global name)
-- Third time (different company): Creates `applications/aws/backend-engineer/1/` with `Ri_Hong.tex` (uses same global name)
-
-**Note:** All generated resume files (`.tex`, `.pdf`) will use the name specified in `resume_name.txt`. You can edit this file anytime to change the name globally for future resumes.
-
-That's it! Cursor handles everything automatically, including version management and custom naming.
-
-### 2. Compile and Review
-
-```bash
-cd applications/google/software-engineering-intern/1
-pdflatex Ri_Hong.tex  # or resume.tex if using default name
-```
-
-Or use your LaTeX editor to compile and view the PDF.
-
-**Note:**
-
-- If you have multiple versions for the same role, navigate to the specific version directory (e.g., `applications/google/software-engineering-intern/2/`)
-- The filename matches the name in `resume_name.txt` (or "resume" if not specified)
+Or manually edit the file and add your desired name. This name will be used for all generated resume files. For example, if the file contains `John_Doe`, all generated resumes will be called `John_Doe.pdf`. . If you don't set this, files will default to "resume".
 
 ## 📋 Master Resume (`master.tex`)
 
