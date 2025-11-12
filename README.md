@@ -11,10 +11,10 @@ resumes/
 ├── applications/           # Job-specific resumes
 │   └── {company}/          # Company directory (auto-created)
 │       └── {role}/         # Role directory (auto-created)
+│           ├── job_description.txt   # Job description (shared across versions)
 │           └── {version}/  # Version directory (auto-created, starts at 1)
 │               ├── {resume_name}.tex     # Tailored resume LaTeX file
-│               ├── {resume_name}.pdf    # Compiled PDF (if generated)
-│               └── job_description.txt   # Original job posting
+│               └── {resume_name}.pdf    # Compiled PDF (if generated)
 ├── cleanup.sh             # Script to remove LaTeX auxiliary files
 ```
 
@@ -26,14 +26,13 @@ resumes/
 └── applications/
     └── aws/
         └── backend-engineer-intern/
+            ├── job_description.txt   # Shared across all versions
             ├── 1/
             │   ├── Ri_Hong.tex
-            │   ├── Ri_Hong.pdf
-            │   └── job_description.txt
+            │   └── Ri_Hong.pdf
             └── 2/
                 ├── Ri_Hong.tex
-                ├── Ri_Hong.pdf
-                └── job_description.txt
+                └── Ri_Hong.pdf
 ```
 
 ## Set Resume Name (First Time Only)
@@ -66,7 +65,7 @@ The `master.tex` file is your **single source of truth**. It contains:
    - Determines the next version number
    - Determines resume name from root `resume_name.txt` (or defaults to "resume" if file doesn't exist)
    - Creates the directory structure `applications/{company}/{role}/{version}/`
-   - Saves the job description
+   - Saves the job description to `applications/{company}/{role}/job_description.txt` (only if it doesn't already exist)
    - Generates a tailored resume with the name from `resume_name.txt`
 4. **Compile & Submit**: Generate PDF and submit your application
 
@@ -86,14 +85,12 @@ When compiling the LaTeX, it will generate auxiliary file. This script removes t
 
 This removes `.aux`, `.log`, `.out`, `.synctex.gz` files while keeping `.tex` and `.pdf` files.
 
-
 ## 📝 Best Practices
 
 1. **Always update master.tex first**: When you have a new experience or project, add it to `master.tex` before tailoring resumes
 2. **Keep job descriptions**: The `job_description.txt` file is automatically saved for your reference
 3. **Version control**: Commit your master resume and job-specific resumes to track changes
 4. **Manual edits**: You can always edit the resume `.tex` file directly, or edit root `resume_name.txt` to change the filename globally
-
 
 ## ❓ FAQ
 

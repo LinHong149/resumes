@@ -17,11 +17,12 @@ Your task is to **automatically tailor resumes** for specific job applications b
   - Contains a single line with the resume name (e.g., "Ri_Hong" or "resume")
   - Used for all generated resume files across all jobs
 - `applications/` - Directory containing job-specific resumes
-  - Each job has its own nested subdirectory: `applications/{company}/{role}/{version}/`
+  - Each job has its own nested subdirectory: `applications/{company}/{role}/`
   - Contains:
-    - `{resume_name}.tex` (tailored resume LaTeX file)
-    - `{resume_name}.pdf` (compiled PDF, if generated)
-    - `job_description.txt` (original job posting)
+    - `job_description.txt` (original job posting, shared across all versions)
+    - `{version}/` subdirectories for each resume version:
+      - `{resume_name}.tex` (tailored resume LaTeX file)
+      - `{resume_name}.pdf` (compiled PDF, if generated)
   - Version numbering: starts at `1` for new roles, increments for multiple resumes per role
 
 ---
@@ -53,9 +54,10 @@ Your task is to **automatically tailor resumes** for specific job applications b
   - If not specified, check if `resume_name.txt` exists in the root directory and read the name from there
   - If neither exists, default to "resume"
   - Save the resume name to `resume_name.txt` in the root directory (global setting for all resumes)
-- **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/{version}/job_description.txt`.
+- **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/job_description.txt`.
   - **CRITICAL**: Do NOT summarize, edit, or modify the job description text in any way.
   - Save it exactly as the user provided it, preserving all formatting, line breaks, and content.
+  - **Note**: The job description is saved once per role (not per version) since it doesn't change across versions.
 - Compare job requirements to content available in `master.tex`.
 
 ### 3. Select and adapt content
@@ -103,8 +105,9 @@ Your task is to **automatically tailor resumes** for specific job applications b
   - `applications/{company}/{role}/{version}/{resume_name}.tex` (the tailored resume for this job)
     - Resume name is determined from user request, root `resume_name.txt` file, or defaults to "resume"
     - Sanitize resume name: replace spaces with underscores, remove special chars (keep alphanumeric, underscores, hyphens)
-  - `applications/{company}/{role}/{version}/job_description.txt` (the EXACT, unmodified job posting text as provided by the user)
+  - `applications/{company}/{role}/job_description.txt` (the EXACT, unmodified job posting text as provided by the user)
     - **MUST be saved verbatim** - no summarization, no editing, no modification whatsoever
+    - Saved once per role (not per version) since the job description doesn't change across versions
   - `resume_name.txt` (in root directory, optional: stores the global resume name)
     - Contains a single line with the resume name (e.g., "Ri_Hong" or "resume")
     - Used for all generated resume files across all jobs
@@ -155,8 +158,9 @@ Create a resume for this, save it as John_Doe
      - If not specified, check root `resume_name.txt` file
      - If neither exists, default to "resume"
      - The resume name is global and applies to all generated resumes
-   - **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/{version}/job_description.txt`
+   - **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/job_description.txt`
      - Preserve all text exactly as the user provided it - do NOT summarize or edit
+     - Only save if the file doesn't already exist (since job description doesn't change across versions)
 
 3. **Read master.tex** to understand all available experiences and projects.
 
@@ -176,8 +180,9 @@ Create a resume for this, save it as John_Doe
    - Save tailored resume to `applications/{company}/{role}/{version}/{resume_name}.tex`
      - Use the resume name from root `resume_name.txt` or user request (default: "resume")
    - If user specified a new resume name, save it to root `resume_name.txt` (global setting)
-   - **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/{version}/job_description.txt`
+   - **Save the EXACT job description text** (verbatim, unmodified) to `applications/{company}/{role}/job_description.txt`
      - The job description file must contain the exact text the user pasted, with no summarization or modification
+     - Only save if the file doesn't already exist (since job description doesn't change across versions)
 
 ---
 
@@ -196,7 +201,8 @@ Create a resume for this, save it as John_Doe
    - If `1` exists, use version `2` → Directory: `applications/aws/backend-engineer-intern/2/`
 3. Determine resume name (from user request, root `resume_name.txt`, or default to "resume")
    - If user specified a new name, save it to root `resume_name.txt` (global setting)
-4. Save the EXACT job description text (verbatim, unmodified) to `applications/aws/backend-engineer-intern/{version}/job_description.txt`
+4. Save the EXACT job description text (verbatim, unmodified) to `applications/aws/backend-engineer-intern/job_description.txt`
+   - Only save if the file doesn't already exist (since job description doesn't change across versions)
 5. Read `master.tex` to see all available experiences (Groq, Base Power, Walnote.ai, etc.)
 6. Select most relevant: Base Power (Go, Kubernetes, Temporal), Groq (Kubernetes, Terraform, GCP), HomeLab (Kubernetes, Terraform)
 7. Reorder to put cloud/infrastructure experiences first
