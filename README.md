@@ -35,6 +35,16 @@ resumes/
                 └── Ri_Hong.pdf
 ```
 
+## 🔧 Setup
+
+### Installing LaTeX for VS Code
+
+To compile and preview LaTeX resumes in VS Code, you'll need to install LaTeX and configure the LaTeX Workshop extension. Follow the detailed instructions at:
+
+**https://mathjiajia.github.io/vscode-and-latex/**
+
+Once installed, you can compile `.tex` files directly in VS Code using `Ctrl + Alt + B` (Windows) or `Option + Cmd + B` (macOS). You can also press the green play button on any opened LaTeX file.
+
 ## Set Resume Name (First Time Only)
 
 Before creating your first resume, set your desired resume filename by editing `resume_name.txt` in the root directory:
