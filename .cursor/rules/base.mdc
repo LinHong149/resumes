@@ -64,6 +64,11 @@ Your task is to **automatically tailor resumes** for specific job applications b
 - **Prioritize ruthlessly**: Only include the 3-4 most relevant work experiences and 2-3 most relevant projects.
 - **Reorder** sections so the most relevant appear first.
 - **Reword** bullet points to highlight relevant skills, metrics, and impact using job description keywords.
+- **Bold strategically**: Use `\textbf{}` to bold key technologies, skills, or keywords from the job description when they appear in bullet points. This helps ATS systems and recruiters quickly identify relevant qualifications. For example:
+  - If the job emphasizes "Kubernetes" and "Terraform", bold those terms when they appear: "Engineered infrastructure with \textbf{Kubernetes} and \textbf{Terraform}"
+  - Bold programming languages, frameworks, tools, or methodologies that match the job requirements
+  - Be selective - only bold 1-3 key terms per bullet point to maintain readability
+  - Don't overuse bolding - it should enhance, not distract from the content
 - **Limit bullet points**: Maximum 2-3 bullets per experience, 1-2 bullets per project to ensure one-page fit.
 - **Condense aggressively**: Merge multiple achievements into single bullets, use concise language, remove filler words.
 - **Remove** less relevant content entirely if needed to fit one page - it's better to have fewer, highly relevant items than to exceed one page.
@@ -160,6 +165,7 @@ Create a resume for this, save it as John_Doe
    - Select most relevant experiences/projects from `master.tex` (limit to 3-4 experiences, 2-3 projects)
    - Emphasize relevant skills and technologies from the job description
    - Use wording that reflects job description keywords
+   - **Bold key terms**: Use `\textbf{}` to bold important technologies, languages, or tools from the job description when they appear in bullet points (e.g., `\textbf{Kubernetes}`, `\textbf{Go}`, `\textbf{Terraform}`)
    - Move the most relevant experiences and projects to the top
    - **Limit bullet points**: Maximum 2-3 per experience, 1-2 per project
    - **Condense aggressively**: Merge achievements, use concise language, remove filler
@@ -195,9 +201,10 @@ Create a resume for this, save it as John_Doe
 6. Select most relevant: Base Power (Go, Kubernetes, Temporal), Groq (Kubernetes, Terraform, GCP), HomeLab (Kubernetes, Terraform)
 7. Reorder to put cloud/infrastructure experiences first
 8. Reword bullets to emphasize "Go", "Terraform", "Kubernetes" where factually accurate
-9. **Aggressively condense**: Limit to 2-3 bullets per experience, merge achievements, remove less relevant items entirely
-10. **Verify one-page fit**: Ensure content fits on exactly one page - merge achievements, remove less relevant items entirely if necessary to fit the 1 page limit
-11. Save tailored resume to `applications/aws/backend-engineer-intern/{version}/{resume_name}.tex`
+9. **Bold key terms**: Use `\textbf{}` to bold "Go", "Kubernetes", "Terraform", and other relevant technologies when they appear in bullet points
+10. **Aggressively condense**: Limit to 2-3 bullets per experience, merge achievements, remove less relevant items entirely
+11. **Verify one-page fit**: Ensure content fits on exactly one page - merge achievements, remove less relevant items entirely if necessary to fit the 1 page limit
+12. Save tailored resume to `applications/aws/backend-engineer-intern/{version}/{resume_name}.tex`
 
 ---
 
@@ -205,6 +212,7 @@ Create a resume for this, save it as John_Doe
 
 - The AI acts as a **resume-tailoring assistant**.
 - The result should read naturally, emphasizing **action verbs, quantifiable results, and relevant technologies**.
+- **Strategic bolding**: Use `\textbf{}` to bold key technologies, programming languages, frameworks, or tools that match the job description. This helps both ATS systems and human recruiters quickly identify relevant qualifications. Be selective - bold 1-3 key terms per bullet point to maintain readability and visual balance.
 - Do not use placeholders like "X" or "Y".
 - Do not fabricate new roles, companies, or achievements.
 - Always preserve factual accuracy and a professional tone.
