@@ -1,0 +1,166 @@
+Amazon Jobs home page
+
+My career
+
+Software Dev Engineer Intern - AI (Summer 2026), Amazon Devices & Services Canada
+
+Job ID: 3121430 | Amazon Development Centre Canada ULC - K03
+
+Description
+
+At Amazon, we're not just looking for people who can code - we're seeking future innovators who are ready to transform their classroom knowledge into real-world solutions. You'll work with technology that powers everything from Amazon.com to AWS, Prime Video, Amazon Fresh, and Alexa, making decisions that balance customer needs, technical constraints, and business goals. Whether you're developing innovative AI models for product recommendations, optimizing our vast logistics network to ensure faster deliveries, or helping secure homes through Ring's smart technology, your work will have tangible impact. You might even find yourself improving operational efficiency in our fulfillment centers using advanced robotics and machine learning. This hands-on experience at one of the world's most innovative companies, a pioneer in cloud computing, AI solutions, and customer experiences, will shape your understanding of how technology transforms industries and drives global change.
+
+As a Software Development Engineer (SDE) intern, you'll take everything you've learned in the classroom and apply it to projects that impact millions of customers worldwide. Instead of theoretical assignments, you'll build real features that customers use every day. You'll work alongside experienced engineers who are invested in your success, sharing their knowledge and helping you grow. The code you write won't be graded and forgotten - it will run in production, serving real customers across the globe. This is your chance to learn how to scale applications beyond anything you've tackled in your coursework.
+
+Amazon internships across all seasons are full-time positions, and interns should expect to work in office, Monday-Friday, up to 40 hours per week typically between 8am-5pm. Specific team norms around working hours will be communicated by your manager. Interns should not have conflicts such as classes or other employment during the Amazon work-day. Applicants should have a minimum of one quarter/semester/trimester remaining in their studies after their internship concludes.
+
+Key job responsibilities
+
+• Collaborate and communicate effectively with experienced cross-disciplinary Amazonians to design, build, and operate innovative products and services that delight our customers, while participating in technical discussions to drive solutions forward.
+
+• Design and develop scalable solutions using cloud-native architectures and microservices in a large distributed computing environment.
+
+• Participate in code reviews and contribute to technical documentation.
+
+• Build and maintain resilient distributed systems that are scalable, fault-tolerant, and cost-effective.
+
+• Leverage and contribute to the development of GenAI and AI-powered tools to enhance development productivity while staying current with emerging technologies.
+
+• Write clean, maintainable code following best practices and design patterns.
+
+• Work in an agile environment practicing CI/CD principles while participating in operational responsibilities including on-call duties.
+
+• Demonstrate operational excellence through monitoring, troubleshooting, and resolving production issues.
+
+A day in the life
+
+As an intern, you will be matched to a manager and a mentor and will have the opportunity to influence the evolution of Amazon technology and lead critical projects early in your career.
+
+In addition to working on an impactful project, you will have the opportunity to engage with Amazonians for both personal and professional development, expand your network, and participate in activities with other interns throughout your internship. No matter the location of your internship, we give you the tools to own your project and learn in a real-world setting.
+
+About the team
+
+At Amazon Devices & Services, we imagine the future and then create it. Join brilliant minds to build new categories of technology that become part of everyone's everyday life. Together, we create connected experiences that transform lives, communities, and the world with our work.
+
+Say hello to Ring, Blink, and Amazon Key. Together, we're making neighborhoods safer with products that make homes more secure and life more convenient. Our teams are on a mission to create affordable, innovative, and easy-to-use smart home security devices.
+
+Basic Qualifications
+
+- Are 18 years of age or older
+
+- Experience programming with at least one modern language such as Java, C++, or C# including object-oriented design
+
+- Experience with AI/ML technologies
+
+- Are enrolled in a Bachelor's degree or above in Computer Science, Computer Engineering, Data Science, Electrical Engineering, or related STEM fields, with an expected graduation date after October 2026
+
+Preferred Qualifications
+
+- Experience communicating technical concepts and processes using clear, simple language and visuals
+
+- Experience in GenAI and Agent service development using LLM/VLM.
+
+- Previous technical internship(s) or demonstrated project experience
+
+- Strong problem-solving and analytical skills
+
+- Demonstrated ability to learn and adapt to new technologies quickly
+
+- Basic understanding of software development lifecycle (SDLC)
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.
+
+Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you're applying in isn't listed, please contact your Recruiting Partner.
+
+Job details
+
+CAN, ON, Toronto
+
+Internships for students
+
+Software Development
+
+Recommended jobs
+
+Based on your recent activity, you may be interested in:
+
+2025 Graduate Software Dev Engineer
+
+Location: IT, Piedmont, Asti
+
+Posted: September 3, 2025 (Updated about 1 month ago)
+
+Software Dev Engineer Intern - AI/ML (Summer 2026), Artificial General Intelligence (AGI)
+
+Location: US, Washington, Bellevue
+
+Posted: November 5, 2025 (Updated 10 days ago)
+
+Legal Intern
+
+Location: ES, Community of Madrid, Madrid
+
+Posted: October 15, 2025 (Updated about 1 month ago)
+
+Software Development Engineer – 2026
+
+Location: RO, Iasi
+
+Posted: October 31, 2025 (Updated 16 days ago)
+
+Software Engineer I
+
+Location: US, California, San Francisco
+
+Posted: October 17, 2025 (Updated 26 days ago)
+
+Share this job
+
+JOIN US ON
+
+Find Careers
+
+Job Categories
+
+Teams
+
+Locations
+
+Military careers
+
+Hourly
+
+Working At Amazon
+
+Culture
+
+Benefits
+
+Amazon Newsletter
+
+Inclusive experiences
+
+Leadership Principles
+
+Help
+
+FAQ
+
+How We Hire
+
+Application status
+
+Accommodations
+
+Legal disclosures and notices
+
+Amazon is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, disability, or other legally protected status.
+
+Privacy and Data
+
+Impressum
+
+Cookies
+
+© 1996-2025, Amazon.com, Inc. or its affiliates
+
