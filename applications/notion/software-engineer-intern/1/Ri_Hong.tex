@@ -1,0 +1,160 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Adapted for Ri Hong
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ri Hong} \\ \vspace{1pt}
+    \small \href{mailto:riri.hong@gmail.com}{\underline{riri.hong@gmail.com}} $|$
+    \href{https://github.com/Ri-Hong}{\underline{github.com/Ri-Hong}} $|$
+    \href{https://linkedin.com/in/ririhong}{\underline{linkedin.com/in/ririhong}} \\ \vspace{3pt}
+    \small 10× Hackathon Winner · Backend Engineer · Cloud and Infrastructure
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{2022 -- 2027}
+      {Bachelor of Computer Science (Co-op) · GPA: 3.9/4.0}{}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, Go, \textbf{Node.js}, \textbf{TypeScript}, Java, JavaScript, C/C++ \\
+     \textbf{Technologies:} \textbf{PostgreSQL}, FastAPI, gRPC, \textbf{AWS}, Docker, Kubernetes, Temporal, \textbf{React}, Electron
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Base Power}{Jan 2025 -- Apr 2025}
+      {Software Engineering Intern}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Discovered and resolved performance bug in real-time market data transformation, reducing complexity from O(n²) to O(n log n) using \textbf{Go} routines; implemented \textbf{gRPC} for type-safe communication between \textbf{Python} algorithm services and \textbf{Go} microservices, reducing serialization overhead by 20\%.}
+        \resumeItem{Improved trading simulation reliability by transitioning from local to cloud-native execution using Temporal Cloud, enabling 1000s of auto-retriable workflows and eliminating single-node failure risks.}
+        \resumeItem{Used OpenTelemetry traces to uncover performance bottleneck caused by blocking BigQuery writes during simulations; implemented non-blocking async publishing using \textbf{Go} routines, achieving a 32\% speedup.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GeeseHacks}{May 2024 -- Feb 2025}
+      {Lead Software Developer}{Waterloo, ON}
+      \resumeItemListStart
+        \resumeItem{Led team of 8 developers building software infrastructure for 600+ attendee hackathon using \textbf{Node.js, TypeScript} and \textbf{React}, achieving 98\% uptime and securing \$25k funding.}
+        \resumeItem{Engineered robust DevOps strategy managing multiple databases including \textbf{PostgreSQL}, ensuring 100\% schema synchronization across three environments and reducing deployment errors by 30\%.}
+        \resumeItem{Cultivated quality-first culture with comprehensive testing using \textbf{TypeScript}, achieving 98\% test coverage and reducing production bugs by 35\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Walnote.ai}{Aug 2025 -- Present}
+      {Founder \& CTO}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Launched AI platform processing 1,000+ animations with \textbf{Celery} + \textbf{FastAPI} pipeline using \textbf{Python}; designed scalable backend architecture with distributed task queues and GPU rendering, deployed on \textbf{AWS}.}
+        \resumeItem{Scaled secure rendering and delivery with \textbf{PostgreSQL} and Docker, reducing render latency from 12s to 2s through pipelined streaming workflow; raised \$20k pre-seed and led product strategy from prototype to production.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microgreen Solar Corp.}{Sept 2023 -- Dec 2023}
+      {Software Engineering Intern}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Spearheaded full-stack \textbf{AWS} Cloud project for processing EnergyPak lithium battery data, utilizing API Gateway, Lambda, DynamoDB, and IoT Core.}
+        \resumeItem{Implemented backend services with \textbf{React, TypeScript, Node.js} and optimized data retrieval, reducing latency by 318\% through effective caching strategies.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Neural Style Transfer Engine} $|$ \emph{PyTorch, FastAPI, Docker, CUDA}}{Sept 2025}
+      \resumeItemListStart
+        \resumeItem{Built scalable REST API with \textbf{FastAPI} for style transfer requests, containerized with \textbf{Docker} for easy deployment; engineered high-performance system with custom CUDA kernels achieving 8x faster style transfer.}
+        \resumeItem{Implemented efficient VGG19-based feature extractor with L-BFGS optimization, delivering production-quality artistic style transfer in under 30 seconds on consumer GPUs.}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{TrailGuide} $|$ \emph{Node.js, TypeScript, FastAPI, Google PaLM, Infobip}}{Nov 2023}
+      \resumeItemListStart
+        \resumeItem{Created SMS-based hiking assistant delivering real-time weather updates and safety check-ins; implemented advanced query classification system using Google's PaLM LLM with \textbf{Node.js}, \textbf{TypeScript}, and \textbf{FastAPI} backend.}
+        \resumeItem{Awarded ``Best Use of Infobip'' at Hack Western 10, distinguishing our project among 15 competitive teams.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
