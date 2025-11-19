@@ -1,0 +1,314 @@
+LinkedIn logo
+
+LinkedIn
+
+Share
+
+Show more options
+
+Software Engineer Intern, Undergraduate - Summer 2026 (Mountain View, CA) 
+
+Mountain View, CA · Reposted 1 week ago · Over 100 applicants
+
+Promoted by hirer · Actively reviewing applicants
+
+ 
+
+$45/hr - $55/hr
+
+
+
+Hybrid
+
+
+
+Full-time
+
+
+
+Easy Apply
+
+ 
+
+Save
+
+Save Software Engineer Intern, Undergraduate - Summer 2026 (Mountain View, CA)  at LinkedIn
+
+
+
+Job match is high, we can help you stand out
+
+Your profile matches the required qualifications well
+
+
+
+Show match details
+
+
+
+Tailor my resume
+
+
+
+Practice an interview
+
+
+
+Create cover letter
+
+
+
+BETA
+
+Is this information helpful?
+
+
+
+
+
+People you can reach out to
+
+University of Waterloo logo
+
+University of Waterloo logo
+
+School alumni from University of Waterloo
+
+
+
+Show all
+
+About the job
+
+Company Description
+
+
+
+LinkedIn is the world's largest professional network, built to create economic opportunity for every member of the global workforce. Our products help people make powerful connections, discover exciting opportunities, build necessary skills, and gain valuable insights every day. We're also committed to providing transformational opportunities for our own employees by investing in their growth. We aspire to create a culture that's built on trust, care, inclusion, and fun – where everyone can succeed.
+
+
+
+Join us to transform the way the world works.
+
+
+
+Job Description
+
+
+
+This internship role will be based out of Headquarters in Mountain View, California.
+
+
+
+At LinkedIn, our approach to flexible work is centered on trust and optimized for culture, connection, clarity, and the evolving needs of our business. The work location of this role is hybrid, meaning it will be performed both from home and from a LinkedIn office on select days, as determined by the business needs of the team.
+
+
+
+Want to work on advanced information-retrieval algorithms, massive scalability infrastructure + storage solutions, and large-scale applications for users on web and mobile devices? LinkedIn is looking for Undergraduate Software Engineering Interns who want to learn, grow, and work with some of the brightest technical talent in the world.
+
+
+
+With the changing landscape of engineering, we are looking to help mold the next wave of engineering talent that will require data-heavy, platform and application skills. We're building the next-generation data infrastructure, including storage, streams, media and analytics platforms. Help us scale LinkedIn infrastructure to handle massive data growth across the LinkedIn ecosystem as we experience dramatic growth in membership and products. You will utilize distributed systems and algorithms and perfect your strong systems orientation skills (multi-threading, concurrency, scalability, performance). You will understand frameworks for caching, queuing, and distributed data storage, and be excited to work on cutting edge open-source systems.
+
+
+
+Candidates must be currently enrolled in an undergraduate degree program, with an expected graduation date December 2026 or later.
+
+
+
+Our internships are 12 weeks in length and will have the option of two intern sessions:
+
+
+
+  May 26th, 2026 - August 14th, 2026
+
+ June 15th, 2026 - September 4th, 2026
+
+
+
+
+
+Responsibilities:
+
+
+
+  Scale distributed applications, make architectural tradeoffs applying synchronous and
+
+
+
+
+
+asynchronous design patterns, write code, and deliver with speediness and quality.
+
+
+
+  Develop multi-tier scalable, high-volume performance, and reliable user-centric application
+
+
+
+
+
+that operate 24x7.
+
+
+
+  Produce high quality software that is unit tested, code reviewed, and checked in regularly for
+
+
+
+
+
+continuous integration.
+
+
+
+Qualifications
+
+
+
+Basic Qualifications:
+
+
+
+  Currently pursuing a B.A./B.S. Degree in Computer Science, or related technical field and
+
+
+
+
+
+returning to the program after the completion of the internship.
+
+
+
+  Programming experience in one or more of the following languages: Java, C/C++, C#,
+
+
+
+
+
+Python, or Ruby.
+
+
+
+  Knowledge of core computer science concepts such as object-oriented design, algorithm
+
+
+
+
+
+design, data structures, problem-solving, and complexity analysis
+
+
+
+Preferred Qualifications:
+
+
+
+  Experience working in a short-cycle, agile, iterative development team.
+
+ Knowledge of computer science, with strong competencies in data structures, algorithms,
+
+
+
+
+
+software design, and object-oriented skills.
+
+
+
+Suggested Skills:
+
+
+
+  Distributed Systems
+
+ Operating Systems
+
+ Cloud Computing
+
+
+
+
+
+As part of the application process for this role, after an initial qualifications review, candidates are required to successfully complete the HackerRank online code challenge. Instructions for completion of the code challenge will be sent to you if your application is selected to move forward in the process.
+
+
+
+LinkedIn is committed to fair and equitable compensation practices.
+
+
+
+The pay range for this role is $45 to $55. Actual compensation packages are based on several factors that are unique to each candidate, including but not limited to skill set, depth of experience, certifications, and specific work location. This may be different in other locations due to differences in the cost of labor.
+
+
+
+The total compensation package for this position may also include annual performance bonus, stock, benefits and/or other applicable incentive compensation plans. For more information, visit https://careers.linkedin.com/benefits.
+
+
+
+Additional Information
+
+
+
+Equal Opportunity Statement 
+
+
+
+We seek candidates with a wide range of perspectives and backgrounds and we are proud to be an equal opportunity employer. LinkedIn considers qualified applicants without regard to race, color, religion, creed, gender, national origin, age, disability, veteran status, marital status, pregnancy, sex, gender expression or identity, sexual orientation, citizenship, or any other legally protected class.
+
+
+
+LinkedIn is committed to offering an inclusive and accessible experience for all job seekers, including individuals with disabilities. Our goal is to foster an inclusive and accessible workplace where everyone has the opportunity to be successful.
+
+
+
+If you need a reasonable accommodation to search for a job opening, apply for a position, or participate in the interview process, connect with us at accommodations@linkedin.com and describe the specific accommodation requested for a disability-related limitation.
+
+
+
+Reasonable accommodations are modifications or adjustments to the application or hiring process that would enable you to fully participate in that process. Examples of reasonable accommodations include but are not limited to:
+
+
+
+Documents in alternate formats or read aloud to you
+
+Having interviews in an accessible location
+
+Being accompanied by a service dog
+
+Having a sign language interpreter present for the interview
+
+
+
+
+
+A request for an accommodation will be responded to within three business days. However, non-disability related requests, such as following up on an application, will not receive a response.
+
+
+
+LinkedIn will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by LinkedIn, or (c) consistent with LinkedIn's legal duty to furnish information.
+
+
+
+San Francisco Fair Chance Ordinance 
+
+
+
+Pursuant to the San Francisco Fair Chance Ordinance, LinkedIn will consider for employment qualified applicants with arrest and conviction records.
+
+
+
+Pay Transparency Policy Statement 
+
+
+
+As a federal contractor, LinkedIn follows the Pay Transparency and non-discrimination provisions described at this link: https://lnkd.in/paytransparency.
+
+
+
+Global Data Privacy Notice for Job Candidates 
+
+
+
+Please follow this link to access the document that provides transparency around the way in which LinkedIn handles personal data of employees and job applicants: https://legal.linkedin.com/candidate-portal.
+
