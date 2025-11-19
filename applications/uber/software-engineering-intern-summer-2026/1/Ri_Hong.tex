@@ -1,0 +1,163 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Adapted for Ri Hong
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ri Hong} \\ \vspace{1pt}
+    \small \href{mailto:riri.hong@gmail.com}{\underline{riri.hong@gmail.com}} $|$
+    \href{https://github.com/Ri-Hong}{\underline{github.com/Ri-Hong}} $|$
+    \href{https://linkedin.com/in/ririhong}{\underline{linkedin.com/in/ririhong}} \\ \vspace{3pt}
+    \small 10× Hackathon Winner · Software Engineer · Cloud Infrastructure · Fullstack Engineer
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{2022 -- 2027}
+      {Bachelor of Computer Science (Co-op) · GPA: 3.9/4.0}{}
+      \resumeItemListStart
+        \resumeItem{Relevant coursework: Algorithms, Data Structures, Object-Oriented Programming, Databases, Distributed Systems, Operating Systems, Computer Networks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Go, Python, Java, C/C++, TypeScript, JavaScript \\
+     \textbf{Technologies:} Kubernetes, Terraform, Docker, AWS, GCP, gRPC, Temporal, Linux, PostgreSQL, React, Next.js \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Groq}{Sept 2025 -- Dec 2025}
+      {Software Engineering Intern}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Engineered multi-region infrastructure with \textbf{Terraform} and \textbf{Kubernetes} on GCP, enabling horizontally scalable workloads and cutting deployment time by 24\%; built observability \textbf{tools} measuring engineering productivity for 400+ engineers.}
+        \resumeItem{Designed and launched an observability platform providing actionable insights through dashboards and analytics workflows, demonstrating end-to-end project ownership in a fast-paced team environment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Base Power}{Jan 2025 -- Apr 2025}
+      {Software Engineering Intern}{Austin, TX}
+      \resumeItemListStart
+        \resumeItem{Led infrastructure initiatives transitioning trading simulations to cloud-native execution using \textbf{Temporal} Cloud, enabling 1000s of auto-retriable workflows; implemented \textbf{Go} routines for non-blocking async publishing, achieving 32\% speedup.}
+        \resumeItem{Built \textbf{software components} using \textbf{Protobuf} and \textbf{gRPC} for seamless communication between \textbf{Python} algorithm services and \textbf{Go} microservices, ensuring type safety and reducing serialization overhead by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Walnote.ai}{Aug 2025 -- Present}
+      {Founder \& CTO}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Developed production platform using \textbf{Python} and \textbf{FastAPI}, processing 1,000+ animations with distributed GPU rendering; accelerated generation by segmenting code and implementing pipelined streaming workflows, reducing render latency from 12s to 2s.}
+        \resumeItem{Scaled secure rendering and delivery with \textbf{Docker}, FFmpeg, Cloudflare R2, and \textbf{PostgreSQL}; led product strategy from prototype to production, raising \$20k pre-seed funding.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Trend Micro}{May 2024 -- Aug 2024}
+      {Software Engineering Intern}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Upgraded legacy Deep Security Manager from JDK 8 to JDK 11, modernizing codebase for 250+ million global customers; revamped \textbf{Jenkins} CI/CD pipeline, achieving 35\% increase in automation efficiency.}
+        \resumeItem{Built and maintained development \textbf{tools} and infrastructure, refactoring monolithic codebases into microservices and cutting deployment errors by 30\%; resolved 40+ installation issues on \textbf{Linux} EC2 instances.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{HomeLab} $|$ \emph{Linux, Proxmox, Ansible, Kubernetes}}{Apr 2025}
+      \resumeItemListStart
+        \resumeItem{Deployed \textbf{Kubernetes} cluster on Proxmox with \textbf{Terraform} + \textbf{Ansible}, enabling scalable, self-healing microservices and secure HTTPS traffic with Nginx + Cloudflare routing.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{DistilBERT Sentiment Analysis} $|$ \emph{PyTorch, GCP, Kubernetes, Terraform}}{Sept 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered production-grade sentiment analysis service achieving 92.5\% accuracy, deployed on GKE with \textbf{Terraform}; implemented end-to-end MLOps pipeline with MLflow, DVC, and BentoML for model serving.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Neural Style Transfer Engine} $|$ \emph{PyTorch, CUDA, FastAPI, Docker}}{Sept 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered high-performance system with custom CUDA kernels, achieving 8x faster style transfer; built scalable REST API with \textbf{FastAPI} and containerized with \textbf{Docker} for production deployment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
