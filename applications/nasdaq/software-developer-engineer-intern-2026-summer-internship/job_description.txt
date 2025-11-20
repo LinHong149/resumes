@@ -1,0 +1,75 @@
+Software Developer/Engineer Intern – 2026 Summer Internship
+Apply
+Software Developer/Engineer Intern – 2026 Summer Internship
+Apply
+locations
+USA - Atlanta - Georgia
+time type
+Full time
+posted on
+Posted 3 Days Ago
+job requisition id
+R0024173
+About Our Internship Program
+
+Nasdaq’s Internship Program is a 10-week summer experience designed to give students real exposure to how global markets and technology come together. Our interns work on meaningful projects alongside Nasdaq teams, gaining hands-on skills that make an impact on the business.
+
+We believe the best way to learn is by doing — that’s why you’ll be paired with a mentor, connected with senior leaders, and included in professional development sessions. You’ll also join a diverse global intern community, sharing experiences and building networks that last beyond the program.
+
+Our goal is to provide a supportive, engaging, and fun environment where your work feels valued and your growth comes first. Check out our Nasdaq Internship Program page to learn more and hear directly from past interns about their journeys.
+
+Software Developer/Engineer Intern – 2026 Summer Internship 
+
+At Nasdaq, you’ll have the chance to start your career in an environment where learning, teamwork, and innovation come first. In this role, you’ll support one of the Core Analytics teams and gain hands-on experience with our Capital Access Platform.
+
+You don’t need to know everything on day one — we’ll help you build the skills, confidence, and network to grow your career.
+
+What You’ll Do
+
+Write quality production-ready code using C#, .Net, .Net Core, Vue.js, MSSQL, PostreSQL, and Terraform
+
+Work with cloud platforms like AWS and build microservices and manage infrastructure using Terraform
+
+Work with a team that leverages automation to streamline the software development lifecycle. This includes automating the build, test, and deployment processes to ensure that code changes are integrated and delivered quickly and reliably.
+
+Review code quality, adhere to coding standards, and align with project requirements
+
+Provide constructive feedback to team members on their code, suggest improvements and best practices
+
+Assist in troubleshooting and debugging issues in the development and production environments
+
+What You’ll Bring
+
+Passion for learning and building innovative solutions
+
+Interest in working with a modern SaaS-based platform
+
+Experience using variety of software development tools and languages, including C#, Vue JS, and/or SQL
+
+Awareness of data-driven systems
+
+Nice-to-Have
+
+Some knowledge of Single Page application development with Vue JS, .NET, and Postgres
+
+Experience or knowledge in building applications leveraging AI
+
+Experience or knowledge of cloud technologies, such as AWS or Azure
+
+Experience or knowledge of no-SQdata stores, such as Elasticsearch
+
+Experience or knowledge of microservices design & development
+
+Experience or knowledge of container technologies, such as Docker
+
+Experience or knowledge of deployment tooling, such as Jenkins
+
+ 
+
+This position will be located in Atlanta and offers the opportunity for a hybrid work environment at least 3 days a week in-office, subject to change, providing flexibility and accessibility for qualified candidates.
+
+Come as You Are
+
+Nasdaq is an equal opportunity employer. We welcome applications from candidates of all backgrounds and identities.
+
+We ensure individuals with disabilities are provided reasonable accommodation throughout the hiring process. To request accommodation, contact us directly.
