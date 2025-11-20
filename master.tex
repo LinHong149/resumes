@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
-% Adapted for Ri Hong
+% Adapted for Lin Hong
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -69,21 +69,36 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Ri Hong} \\ \vspace{1pt}
-    \small \href{mailto:riri.hong@gmail.com}{\underline{riri.hong@gmail.com}} $|$
-    \href{https://github.com/Ri-Hong}{\underline{github.com/Ri-Hong}} $|$
-    \href{https://linkedin.com/in/ririhong}{\underline{linkedin.com/in/ririhong}} \\ \vspace{3pt}
-    \small 10× Hackathon Winner · Applied Machine Learning Engineer · Cloud Infrastructure · Fullstack Engineer
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · 2× Founding Engineer · Full-Stack \& AI Developer
 \end{center}
 \vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Waterloo}{Sept 2025 -- Apr 2029}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President’s Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Intro to CS, Algorithm Design, Data Abstraction, Calculus 1 \& 2}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages:} Go, Python, C/C++, TypeScript, JavaScript, Java, HTML, CSS \\
-     \textbf{Technologies:} Docker, React, Next.js, Kubernetes, Terraform, Temporal, gRPC, AWS, Linux, PostgreSQL \\
-     \textbf{AI/ML:} PyTorch, TensorFlow, scikit-learn, LangChain, OpenAI GPT-4/5, CUDA, MLflow, DVC
+     \textbf{Languages:} Python, Go, Java, C++, JavaScript, TypeScript, Bash, PHP, HTML/CSS, Tailwind \\
+     \textbf{Technologies:} Git, Next.js, React, Flask, FastAPI, Docker, AWS, PostgreSQL, MongoDB, Nginx, Pytorch
     }}
  \end{itemize}
 
@@ -92,65 +107,30 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Groq}{Sept 2025 -- Dec 2025}
-      {Software Engineering Intern}{Toronto, ON}
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Engineered multi-region infrastructure with \textbf{Terraform}, \textbf{Kubernetes}, Kustomize, and Flux on GCP and Groq hardware, enabling horizontally scalable AI/ML workloads and cutting deployment time by 24\%.}
-        \resumeItem{Designed and launched an observability platform to measure engineering productivity and AI coding tool adoption (Claude Code, Cursor, AmpCode), providing actionable insights for 400+ engineers.}
-        \resumeItem{Developed dashboards and analytics workflows that surfaced correlations between AI tool usage and code quality, driving data-informed adoption strategies.}
+        \resumeItem{Optimized a large-scale video rendering pipeline, reducing processing time by 5× through segment-based parallelization and backend optimizations.}
+        \resumeItem{Implemented Clerk authentication with WebSockets, enabling real-time sync and Redis pub/sub event broadcasting into a Neon-hosted PostgreSQL database.}
+        \resumeItem{Built scalable REST APIs using FastAPI, Dockerized services, and asynchronous Celery workers orchestrated through Redis.}
+        \resumeItem{Deployed frontend to Vercel and backend to Render, utilizing Cloudflare R2 for object storage and GitHub Actions for CI/CD.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Walnote.ai}{Aug 2025 -- Present}
-      {Founder \& CTO}{Toronto, ON}
+      {FTC Robotics}{Sept 2022 -- June 2025}
+      {Senior Software Lead}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Launched an AI platform combining GPT-5 with Manim to auto-generate explainer videos; processed 1,000+ animations with a \textbf{Celery} + \textbf{FastAPI} pipeline.}
-        \resumeItem{Accelerated generation by segmenting code generation and running distributed GPU rendering, reducing render latency from 12s to 2s; leveraging a pipelined streaming workflow to deliver near real-time playback.}
-        \resumeItem{Scaled secure rendering and delivery with \textbf{Docker}, FFmpeg, Cloudflare R2, and \textbf{PostgreSQL}; raised \$20k pre-seed and led product strategy from prototype to production.}
+        \resumeItem{Engineered telemetry pipelines aggregating encoder, IMU, and camera data into unified robot state estimation.}
+        \resumeItem{Designed signal filtering and validation logic to eliminate noisy sensor readings, improving reliability by 20\% and doubling response speed.}
+        \resumeItem{Implemented PID tuning with hardware engineers, improving autonomous navigation accuracy by 70\%.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Base Power}{Jan 2025 -- Apr 2025}
-      {Software Engineering Intern}{Austin, TX}
+      {Linovation Design}{Summer 2024}
+      {Full Stack Developer}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Led fullstack and infrastructure initiatives in a mission-critical environment, collaborating with algorithm developers to improve energy trading performance in a Series B (\$850M) startup.}
-        \resumeItem{Improved trading simulation reliability and scale by transitioning from local to cloud-native execution using \textbf{Temporal} Cloud, enabling 1000s of auto-retriable workflows and eliminating single-node failure risks.}
-        \resumeItem{Discovered and resolved a performance bug in real-time market data transformation logic, reducing complexity from O(n²) to O(n log n) by applying a sort-and-search optimization.}
-        \resumeItem{Used OpenTelmetry traces to uncover a performance bottleneck caused by blocking BigQuery writes during simulations; implemented non-blocking async publishing using \textbf{Go} routines, achieving a 32\% speedup.}
-        \resumeItem{Implemented \textbf{Protobuf} and \textbf{gRPC} to allow for seamless communication between \textbf{Python} algorithm services and \textbf{Go} microservices, ensuring type safety and reducing serialization overhead by 20\%.}
-        \resumeItem{Rewrote market controller UI using \textbf{React} and \textbf{Next.js}, allowing on-call traders to execute trades within seconds.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Trend Micro}{May 2024 -- Aug 2024}
-      {Software Engineering Intern}{Ottawa, ON}
-      \resumeItemListStart
-        \resumeItem{Upgraded the legacy Deep Security Manager from JDK 8 to JDK 11, modernizing the codebase and enhancing compatibility with contemporary tools for over 250 million global customers.}
-        \resumeItem{Revamped the \textbf{Jenkins} CI/CD pipeline to support JDK 11, achieving a 35\% increase in automation efficiency and accelerating deployment timelines by 15\%.}
-        \resumeItem{Overhauled critical development tools, including install4j, powermock, and JAX-WS, enabling 25\% faster integration testing cycles.}
-        \resumeItem{Refactored monolithic codebases into microservices, cutting deployment errors by 30\% and improving scalability for future development.}
-        \resumeItem{Troubleshot and resolved over 40 installation and deployment issues on \textbf{Linux} \textbf{EC2} instances, enhancing system reliability and uptime.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {GeeseHacks}{May 2024 -- Feb 2025}
-      {Lead Software Developer}{Waterloo, ON}
-      \resumeItemListStart
-        \resumeItem{Led a team of 8 developers to develop the software infrastructure for a first-time hackathon with 600+ attendees, achieving 98\% uptime during the event and securing \$25k in funding.}
-        \resumeItem{Engineered and implemented a robust DevOps strategy to manage multiple databases, ensuring 100\% schema synchronization across three environments and reducing deployment errors by 30\%.}
-        \resumeItem{Pioneered the use of \textbf{GitHub Actions} pipeline to reduce manual work, increasing developer productivity by 43\%.}
-        \resumeItem{Cultivated a quality-first culture by incorporating \textbf{Jest} for unit tests and \textbf{Cypress} for E2E testing, achieving 98\% test coverage and reducing production bugs by 35\%.}
-        \resumeItem{Optimized application performance and search visibility using \textbf{Next.js}, achieving a 25\% faster page load time and improving SEO rankings by 20\%.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Microgreen Solar Corp.}{Sept 2023 -- Dec 2023}
-      {Software Engineering Intern}{Toronto, ON}
-      \resumeItemListStart
-        \resumeItem{Spearheaded and meticulously documented a full-stack \textbf{AWS} Cloud project, from design to deployment, for processing EnergyPak lithium battery data.}
-        \resumeItem{Utilized \textbf{AWS} services including API Gateway, \textbf{Lambda}, \textbf{DynamoDB}, IoT Core, and Amplify, enhancing project functionality and reliability.}
-        \resumeItem{Implemented a Progressive Web App (PWA) frontend with \textbf{Next.js}, optimizing navigation with page routing and Server-Side Rendering (SSR).}
-        \resumeItem{Dramatically reduced data retrieval latency and operational costs by 318\% through effective use of browser indexedDB caching.}
+        \resumeItem{Designed and launched 8 production websites using Next.js, React, TypeScript, Tailwind, and Figma.}
+        \resumeItem{Built Flask APIs with JWT authentication and database integrations; deployed using Docker, Vercel, and MongoDB.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -160,158 +140,67 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Trasee} $|$ \emph{Pyodide, React, TypeScript, Vite, React Flow}}{Oct 2025}
+      {\textbf{HomeLab} $|$ \emph{Linux, Docker, Nginx, Cloudflare}}{May 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Built a real-time Python code visualizer that intelligently recognizes data structures (linked lists, trees, graphs) and renders them interactively in the browser, helping users understand algorithms visually.}
-        \resumeItem{Engineered a two-phase static + runtime analysis pipeline using \textbf{Python}'s ast module and sys.settrace within \textbf{Pyodide} WebAssembly, enabling accurate inference without external APIs.}
-        \resumeItem{Designed a performant time-travel debugger, storing execution diffs for thousands of steps while maintaining smooth playback with debounced updates and memoized \textbf{React} renders.}
-        \resumeItem{Integrated Monaco Editor for a VS Code-like UX and \textbf{React Flow} for custom graph visualizations with auto-layout algorithms and drag interactions.}
-        \resumeItem{Won ``Best Revolutionizing Learning Hack'' at Hack the Valley X among 100+ teams.}
+        \resumeItem{Built a personal Linux server secured with SSH key-pair authentication and HTTPS reverse proxying.}
+        \resumeItem{Deployed Dockerized Node.js apps with PM2 and Cloudflare DNS/routing for secure access.}
+        \resumeItem{Developed an understanding of TCP/IP fundamentals, load balancing, and CDN architectures.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Neural Style Transfer Engine} $|$ \emph{PyTorch, CUDA, FastAPI, Docker}}{Sept 2025}
+      {\textbf{Spotilike} $|$ \emph{Flask, Next.js, Tailwind, TensorFlow, DeepFace}}{June 2025}
       \resumeItemListStart
-        \resumeItem{Engineered a high-performance Neural Style Transfer system with custom \textbf{CUDA} kernels for Gram matrix computation, achieving 8x faster style transfer compared to CPU-only implementation.}
-        \resumeItem{Implemented an efficient VGG19-based feature extractor with L-BFGS optimization, delivering production-quality artistic style transfer in under 30 seconds on consumer GPUs.}
-        \resumeItem{Built a scalable REST API with \textbf{FastAPI} for style transfer requests, containerized with \textbf{Docker} for easy deployment.}
+        \resumeItem{Created an AI-driven music discovery platform that matches songs to user emotions in real time.}
+        \resumeItem{Integrated DeepFace, OpenCV, TensorFlow, Gemini, and Spotify API for emotion-aware track recommendations.}
+        \resumeItem{Designed MongoDB schemas linking emotion embeddings to music metadata.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{DistilBERT Sentiment Analysis} $|$ \emph{PyTorch, GCP, Kubernetes, Terraform}}{Sept 2025}
+      {\textbf{Lofied} $|$ \emph{Python, torchaudio, Pedalboard}}{May 2025}
       \resumeItemListStart
-        \resumeItem{Engineered a production-grade sentiment analysis service achieving 92.5\% accuracy using DistilBERT, deployed on GKE with \textbf{Terraform}.}
-        \resumeItem{Implemented end-to-end MLOps pipeline with \textbf{MLflow} for experiment tracking, DVC for data versioning, and BentoML for model serving.}
-        \resumeItem{Optimized training with mixed precision and distributed GPU training with \textbf{Kubernetes}, reducing training time by 40\% while maintaining model accuracy.}
+        \resumeItem{Developed a Python tool converting Spotify playlists to lo-fi tracks using DSP and Spotify API.}
+        \resumeItem{Implemented Basic Pitch for audio-to-sheet-music conversion and Docker-based deployment.}
+        \resumeItem{Won Best Solo Hack \& Top 6 Overall at JamHacks 2025.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{HomeLab} $|$ \emph{Linux, Proxmox, Ansible, Kubernetes}}{Apr 2025}
+      {\textbf{Skip the Walk} $|$ \emph{Terraform, Commander.js, Slack API}}{Sept 2024}
       \resumeItemListStart
-        \resumeItem{Deployed a \textbf{Kubernetes} cluster on Proxmox with \textbf{Terraform} + \textbf{Ansible}, enabling scalable, self-healing microservices and secure HTTPS traffic with Nginx + Cloudflare routing.}
+        \resumeItem{Built a CLI to automate Domino’s pizza ordering and volunteer routing at Hack the North.}
+        \resumeItem{Integrated Mappedin for indoor navigation and Terraform for workflow automation.}
+        \resumeItem{Won Best Use of Terraform at Hack the North 2024.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{Skip the Walk} $|$ \emph{Terraform, Mappedin, Commander.js, Slack API}}{Sept 2024}
+      {\textbf{Flaim Brain} $|$ \emph{Flask, LangChain, MongoDB}}{Jan 2024}
       \resumeItemListStart
-        \resumeItem{Created a CLI tool to solve the last-mile-delivery problem, enabling volunteers to deliver pizza directly to hackers without leaving their workspace.}
-        \resumeItem{Used Mappedin for room labeling and pathfinding, and \textbf{Terraform} to automate pizza orders.}
-        \resumeItem{Awarded ``Best Use of Terraform'' at Hack the North 2024, Canada's largest hackathon.}
+        \resumeItem{Implemented an AI mentor enabling file uploads, note summarization, and personalized study guides.}
+        \resumeItem{Used GPT-4, Cloud Vision, and MongoDB Atlas Vector Search to provide semantic retrieval.}
+        \resumeItem{Placed 4th at Hack the Valley 8 among 80 teams.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{PharmFill} $|$ \emph{Google Cloud Vision, Gemini, Python Pillow}}{Jan 2024}
+      {\textbf{Bill-in-Bytes} $|$ \emph{React Native, Google Cloud Vision}}{May 2023}
       \resumeItemListStart
-        \resumeItem{Led the development of a mobile app designed to streamline the process of converting and communicating prescriptions between physicians, pharmacists and patients.}
-        \resumeItem{Integrated \textbf{Google Cloud Vision} OCR and \textbf{Gemini} Pro for accurate text extraction, classification, and form annotation from prescription receipts.}
-        \resumeItem{Won ``MedX AI Challenge'' and placed Top 10 at DeltaHacks X among 95 teams.}
+        \resumeItem{Digitized paper receipts into structured data using OCR for easier expense tracking.}
+        \resumeItem{Won Best UI/UX Hack \& People's Choice at GryphHacks 2023.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{TrailGuide} $|$ \emph{Google PaLM, Infobip, FastAPI}}{Nov 2023}
+      {\textbf{Ingredify} $|$ \emph{React Native, Cohere, MongoDB}}{July 2023}
       \resumeItemListStart
-        \resumeItem{Created an SMS-based hiking assistant delivering real-time weather updates, safety check-ins, and trip info to enhance user experience and safety.}
-        \resumeItem{Implemented an advanced query classification system using Google's \textbf{PaLM} LLM, enabling accurate and responsive user interactions.}
-        \resumeItem{Awarded ``Best Use of Infobip'' at Hack Western 10, distinguishing our project among 15 competitive teams.}
+        \resumeItem{Extracted ingredient text using Tesseract OCR and analyzed health effects with Cohere NLP.}
+        \resumeItem{Built personalized dietary recommendation features using MongoDB and React Native.}
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\textbf{FlaimBrain} $|$ \emph{LangChain, GPT-4, MongoDB, Flask}}{Oct 2023}
+      {\textbf{Inner Voice} $|$ \emph{Next.js, Whisper, OpenAI TTS}}{July 2023}
       \resumeItemListStart
-        \resumeItem{Engineered an AI study assistant using \textbf{GPT-4} for personalized learning tools like summaries and flashcards from user-uploaded notes.}
-        \resumeItem{Led the RAG process architecture, integrating \textbf{GPT-4} with \textbf{MongoDB} Vector Search and \textbf{Flask} for the backend.}
-        \resumeItem{Achieved 4th place at Hack the Valley 8 among 80 teams.}
+        \resumeItem{Built a multi-persona speech AI app with full STT and TTS accessibility.}
+        \resumeItem{Integrated OpenAI APIs for persona generation and conversation flows.}
       \resumeItemListEnd
 
-    \resumeProjectHeading
-      {\textbf{Blockmind AI} $|$ \emph{GPT-4, Polygon, LangChain, Faiss}}{June 2023}
-      \resumeItemListStart
-        \resumeItem{Developed an AI assistant to simplify blockchain tasks like minting NFTs, token transfers, smart contract audits, and transaction validation.}
-        \resumeItem{Implemented the T3 stack for a full-stack web demo, using IPFS/Filecoin for decentralized NFT storage and The Graph for market queries.}
-        \resumeItem{Won Worldcoin Best AI Use Case and Pool Prizes from UMA and The Graph at ETHGlobal Waterloo.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Bill in Bytes} $|$ \emph{React Native, Google Cloud Vision}}{May 2023}
-      \resumeItemListStart
-        \resumeItem{A practical application designed to streamline the management of paper receipts by converting them into digital records, enabling easy tracking of expenses and simplified tax filing.}
-        \resumeItem{Integrated \textbf{Google Cloud Vision} API to incorporate optical character recognition (OCR) technology, transforming physical receipts into digital data.}
-        \resumeItem{Submitted to GryphHacks 2023, won Best UI/UX and People's Choice award (1 out of 20 teams).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Ingredify} $|$ \emph{React Native, Cohere, MongoDB}}{May 2023}
-      \resumeItemListStart
-        \resumeItem{A mobile app that allows users to take a picture of an ingredients list, then provides extensive information about ingredients, including health effects and allergenic properties.}
-        \resumeItem{\textbf{Cohere} API used to generate descriptions, classify components, retrieve the best explanation from our \textbf{MongoDB} database, and provide the summary of an ingredient.}
-        \resumeItem{Submitted to MetHacks 2023, won Best Use of Cohere (1 out of 35 teams).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Personal Website} $|$ \emph{ReactJS, CSS}}{Jan 2023}
-      \resumeItemListStart
-        \resumeItem{Developed a frontend \textbf{React} website to showcase my work experience and projects.}
-        \resumeItem{Used Midjourney AI image generation, Photoshop and pure CSS to achieve the parallax effect on landing page.}
-        \resumeItem{Integrated Google Analytics to track number of site visits (100+ site visits).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Foodtastic} $|$ \emph{HTML, CSS, Javascript}}{May 2022}
-      \resumeItemListStart
-        \resumeItem{A website that uses the Flipp API and Spoonacular API to compile a list of recipes and supermarkets to find the cheapest ingredients so that university students can make healthy and affordable food.}
-        \resumeItem{HTML and CSS used for the frontend and Javascript used to connect to the APIs.}
-        \resumeItem{Submitted to Jamhacks 6, won Best Hack for University Students (1 out of 24 teams).}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Smart Door Lock} $|$ \emph{Arduino (C++), Android Studio (Java), IoT}}{Apr 2021}
-      \resumeItemListStart
-        \resumeItem{An ESP 32 module with an LCD display, pin pad, and servo to lock/unlock a door.}
-        \resumeItem{Comes with a companion Android app to remotely toggle, monitor the state of the lock and Android SQL Database used to store the log of users. The system allows for multiple users with unique pins to be recognized.}
-        \resumeItem{Communicates over IoT MQTT.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Fluencity} $|$ \emph{ReactJS}}{Aug 2021}
-      \resumeItemListStart
-        \resumeItem{A web app used to train reading and speech fluency using the Symbl.ai text-to-speech API.}
-        \resumeItem{Won Best Veteran Hack and Best use of Symbl.ai in XHacks 2021.}
-      \resumeItemListEnd
-
-    \resumeProjectHeading
-      {\textbf{Computer Science Club Website} $|$ \emph{ReactJS, Firebase}}{May 2021}
-      \resumeItemListStart
-        \resumeItem{Developed the official website of Bethune C.I.'s computer science club to promote computer science and attract new members.}
-        \resumeItem{Lead the process of planning, prototyping, frontend design, and backend integration in a team of four.}
-        \resumeItem{Implemented \textbf{Google Firebase} to authenticate executives and used the Firestore database to store announcements, executives, and projects.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------
-\section{Publications}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Pruned Graph Generating State Space Models (in preparation)}{Oct 2025}
-      {Research Paper}{}
-      \resumeItemListStart
-        \resumeItem{Investigates the effect of pruning edges from the Minimum Spanning Tree (MST) in GG-SSMs to reduce FLOPs while preserving accuracy.}
-        \resumeItem{Proposes a pruning strategy to sparsify graph structure, improving computational efficiency and scalability of GG-SSMs for high-dimensional data.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{2022 -- 2027}
-      {Bachelor of Computer Science (Co-op) · GPA: 3.9/4.0}{}
-      \resumeItemListStart
-        \resumeItem{Relevant coursework: Algorithms, Data Structures, Object-Oriented Programming, Databases, Artificial Intelligence, Machine Learning, Operating Systems, Distributed Systems, Linear Algebra \& Numerical Methods, Computer Vision, Computer Networks}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
-
-«
