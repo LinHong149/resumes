@@ -1,0 +1,98 @@
+We're seeking Software Engineering Interns to join our Internal Engineering team, a group that builds the tools, applications, and infrastructure that power MongoDB's internal operations. The team partners closely with cross-functional stakeholders across the company - especially our go-to-market (GTM) and business systems teams - to improve productivity and leverage AI to make data more actionable.
+
+
+
+Interns will work on projects that span both application development and infrastructure, contributing to systems that enhance internal decision-making and streamline workflows across departments. You'll gain hands-on experience working with AI-driven applications, APIs, and internal tooling used by MongoDB employees every day.
+
+
+
+What we are looking for in you
+
+
+
+In the process of receiving a Bachelor's or Master's degree in Computer Science, Computer Engineering, or a related field.
+
+Have a foundation in computer science theory, with proficiencies in data structures, algorithms, and software design.
+
+Strong programming foundation, particularly in Python (used across most projects); familiarity with Go and React a plus.
+
+Interest in AI, LLMs, and automation, especially how they can improve internal tools and systems
+
+A desire to grow as a full-stack engineer and contribute to meaningful, cross-functional projects that directly impact internal teams.
+
+Demonstrated ownership, communication skills, and openness to taking on new challenges in a collaborative environment.
+
+Have a minimum of one quarter/semester remaining in university studies after the internship concludes. Graduation date in Fall 2026 or Spring 2027.
+
+Must be authorized to work in the United States. Company sponsorship may be available for eligible candidates applying for certain roles.
+
+What you'll find at MongoDB
+
+
+
+Authentic Culture: A workplace where you are encouraged to bring your whole self to work, we believe that Embracing the Power of Differences is the best way to broaden our own perspectives and foster innovation.
+
+Personalized Mentorship: Pair up with an engineering Mentor, a Program Advisor from the Early Talent Recruitment Team, and an Employee Resource Group (ERG) Guide to foster your growth.
+
+Career Coaching Sessions: Access to a tailored training program designed uniquely for interns' personal and professional development.
+
+Work-Life Harmony: Embrace "Bloom for Interns" with access to mental and physical health benefits, paid time off, free lunch, and more!
+
+Impactful Projects: Contribute to projects where you can Make it Matter - your meaningful work will see the light of day.
+
+Exclusive Networking: Attend "Speaker Series" and "Roundtables" to connect with our executives and departmental leaders.
+
+Vibrant Community: Build connections with fellow interns and join after-work social events, virtual gatherings, and local city activities to create connections and friendships.
+
+Relocation Support: Financial assistance, housing, and a commuting stipend to allow you to comfortably settle into your new location.
+
+Path to Full-Time: A chance to see if MongoDB is where you see yourself long term with the possibility of receiving a full time offer at the end of the summer!
+
+About Us
+
+
+
+MongoDB is built for change, empowering our customers and our people to innovate at the speed of the market. We have redefined the database for the AI era, enabling innovators to create, transform, and disrupt industries with software. MongoDB's unified database platform—the most widely available, globally distributed database on the market—helps organizations modernize legacy workloads, embrace innovation, and unleash AI. Our cloud-native platform, MongoDB Atlas, is the only globally distributed, multi-cloud database and is available across AWS, Google Cloud, and Microsoft Azure.
+
+
+
+With offices worldwide and nearly 60,000 customers—including 75% of the Fortune 100 and AI-native startups—relying on MongoDB for their most important applications, we're powering the next era of software.
+
+
+
+Our compass at MongoDB is our Leadership Commitment, guiding how and why we make decisions, show up for each other, and win. It's what makes us MongoDB.
+
+
+
+To drive the personal growth and business impact of our employees, we're committed to developing a supportive and enriching culture for everyone. From employee affinity groups, to fertility assistance and a generous parental leave policy, we value our employees' wellbeing and want to support them along every step of their professional and personal journeys. Learn more about what it's like to work at MongoDB, and help us make an impact on the world!
+
+
+
+MongoDB internships are full-time (40 hours/week) for 10 consecutive weeks lasting from dates in June until August. All interns are considered hybrid employees, designated the "in office" working model and are expected to be in their office location 3-5 days a week. 
+
+
+
+Due to the high volume of applications our Early Talent Recruitment Team receives, it may take up to six weeks to hear back regarding an update on your application status. Our goal is to get back sooner, but we appreciate your patience as our team carefully reviews each application.
+
+
+
+MongoDB is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request an accommodation due to a disability, please inform your Early Talent Recruiter.
+
+
+
+MongoDB, Inc. provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type and makes all hiring decisions without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws.
+
+
+
+Req ID: 3263273690
+
+
+
+MongoDB's base salary range for this role is posted below. Compensation at the time of offer is unique to each candidate and based on a variety of factors such as skill set, experience, qualifications, and work location. Salary is one part of MongoDB's total compensation and benefits package. Other benefits for eligible employees may include: equity, participation in the employee stock purchase program, flexible paid time off, 20 weeks fully-paid gender-neutral parental leave, fertility and adoption assistance, 401(k) plan, mental health counseling, access to transgender-inclusive health insurance coverage, and health benefits offerings. Please note, the base salary range listed below and the benefits in this paragraph are only applicable to U.S.-based candidates.
+
+
+
+MongoDB's base salary range for this role in the U.S. is:
+
+$86,528—$123,552 USD
+

@@ -1,0 +1,132 @@
+About Ramp
+
+At Ramp, we're rethinking how modern finance teams function in the age of AI. We believe AI isn't just the next big wave. It's the new foundation for how business gets done. We're investing in that future — and in the people bold enough to build it.
+
+
+
+Ramp is a financial operations platform designed to save companies time and money. Our all-in-one solution combines payments, corporate cards, vendor management, procurement, travel booking, and automated bookkeeping with built-in intelligence to maximize the impact of every dollar and hour spent. More than 45,000 businesses, from family-owned farms to e-commerce giants to space startups, have saved $10B and 27.5M hours with Ramp. Founded in 2019, Ramp powers the fastest-growing corporate card and bill payment platform in America, and enables over $100 billion in purchases each year.
+
+
+
+Ramp's investors include Thrive Capital, Sands Capital, General Catalyst, Founders Fund, Khosla Ventures, Sequoia Capital, Greylock, and Redpoint, as well as over 100 angel investors who were founders or executives of leading companies. The Ramp team comprises talented leaders from leading financial services and fintech companies—Stripe, Affirm, Goldman Sachs, American Express, Mastercard, Visa, Capital One—as well as technology companies such as Meta, Uber, Netflix, Twitter, Dropbox, and Instacart.
+
+
+
+Ramp has been named to Fast Company's Most Innovative Companies list and LinkedIn's Top U.S. Startups for more than 3 years, as well as the Forbes Cloud 100, CNBC Disruptor 50, and TIME Magazine's 100 Most Influential Companies.
+
+
+
+NOTE: This is for Winter & Summer 2026, we'll start hiring for Fall 2026 internships in January :)
+
+
+
+About the Role
+
+Being a part of Forward Deployed Engineering (FDE), you will design and build solutions to support our largest customers and scale our enterprise motion. FDE is a high-pace, customer-facing, business-focused engineering team, and we pave the way for Ramp to support the largest and most complex organizations in the world.
+
+
+
+On FDE, you will interact directly with customers and deliver solutions end to end — from understanding pain points and shaping product decisions to designing and implementing scalable systems. We are a full stack team and collaborate closely with sales and core product engineering.
+
+
+
+Explore our Engineering Blogs to learn more!
+
+
+
+Forward Deployed Engineering @ Ramp
+
+
+
+FDE Internship @ Ramp
+
+
+
+Emerging Talent Blog
+
+
+
+What You'll Do
+
+Deliver solutions end to end that meet the needs of our largest, strategic customers — understanding user pain points, scoping product specs, and designing and building software.
+
+
+
+Collaborate closely with our sales and go-to-market teams to close exciting deals, activate customers, and expand the value Ramp provides over time. We work with and support huge, world-class companies at the scale of $100B+ in valuation.
+
+
+
+Drive our core product engineering roadmap and make important prioritization and scoping decisions that determine when we build custom solutions vs. accelerate larger existing projects. Our team uses an embedding model where FDEs embed within core product engineering teams to develop expertise in the most relevant technical areas.
+
+
+
+Solve technical challenges to support new levels of scale, and help us develop and execute our strategy to grow our enterprise platform. For example, extending our data model for roles and permissions, seamlessly integrating with 3rd party systems with generalized data exports, and ingesting HRIS data at scale.
+
+
+
+What You Need
+
+Currently pursuing a B.S. (or higher) in Computer Science or a related technical field, with an expected graduation date between Dec 2026 - 2028
+
+
+
+Track record of shipping high quality products and features or a portfolio of side projects
+
+
+
+Ability to turn business and product ideas into engineering solutions
+
+
+
+Desire to work in a fast-paced environment, continuously grow, and master your craft
+
+
+
+Alignment with Ramp's core values of enabling businesses to grow more by spending less
+
+
+
+Benefits (for U.S.-based full-time employees)
+
+100% medical, dental & vision insurance coverage for you
+
+
+
+Partially covered for your dependents
+
+
+
+One Medical annual membership
+
+
+
+401k (including employer match on contributions made while employed by Ramp)
+
+
+
+Flexible PTO
+
+
+
+Fertility HRA (up to $5,000 per year)
+
+
+
+WFH stipend to support your home office needs
+
+
+
+Wellness stipend
+
+
+
+Parental Leave
+
+
+
+Relocation support to NYC or SF (as needed)
+
+
+
+Pet insurance
+

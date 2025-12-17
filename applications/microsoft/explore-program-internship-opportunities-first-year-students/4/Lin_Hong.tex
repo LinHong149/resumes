@@ -1,0 +1,161 @@
+%-------------------------
+% Tailored Resume for Microsoft Explore Program Internship (First-Year)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · Software Engineer · Product Development
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Sept 2025 -- Apr 2029}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President's Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Intro to CS, Algorithm Design, Data Abstraction, Calculus 1 \& 2}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, Go, Java, C++, JavaScript, TypeScript, Bash, PHP, HTML/CSS, Tailwind \\
+     \textbf{Technologies:} Git, Next.js, React, Flask, FastAPI, Docker, AWS, PostgreSQL, MongoDB, Nginx, Pytorch
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Shipped \textbf{10+} full-stack features using \textbf{Python}, \textbf{FastAPI}, and React, reducing user onboarding flow time by \textbf{30\%} and increasing weekly active sessions by \textbf{$\sim$25\%}.}
+        \resumeItem{Designed and optimized \textbf{backend APIs} and data pipelines on \textbf{PostgreSQL} and \textbf{Redis}, cutting p95 request latency by \textbf{40\%} and eliminating multiple production timeouts.}
+        \resumeItem{Improved release reliability by \textbf{introducing CI/CD} with \textbf{GitHub Actions} and code review checklists, driving a noticeable drop in post-release bug reports from teammates.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Linovation Design}{Summer 2024}
+      {Full Stack Developer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Designed and launched \textbf{8} production marketing sites using \textbf{Next.js}, \textbf{React}, \textbf{TypeScript}, and Tailwind, taking client projects from requirements gathering to live deployment.}
+        \resumeItem{Built \textbf{Flask} APIs with JWT authentication and database integrations; deployed with \textbf{Docker}, Vercel, and MongoDB, cutting manual content-update work for clients by \textbf{$\sim$50\%}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Spotilike} $|$ \emph{Flask, Next.js, Tailwind, TensorFlow, DeepFace}}{June 2025}
+      \resumeItemListStart
+        \resumeItem{Created an AI-driven music discovery platform that matches songs to user emotions in real time using \textbf{Python}, \textbf{TensorFlow}, and \textbf{DeepFace}, evaluated with \textbf{50+} user test sessions.}
+        \resumeItem{Integrated \textbf{Flask} backend with \textbf{Next.js} frontend, \textbf{Spotify API}, and MongoDB schemas linking emotion embeddings to music metadata, increasing relevant recommendation click-through in testing.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Lofied} $|$ \emph{Python, torchaudio, Pedalboard}}{May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Python} tool converting Spotify playlists to lo-fi tracks using DSP and Spotify API, automating processing of \textbf{dozens} of songs per run with minimal manual steps.}
+        \resumeItem{Won Best Solo Hack \& Top 6 Overall at JamHacks 2025 out of \textbf{200+} hackers, demonstrating end-to-end product development from design to deployment.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Flaim Brain} $|$ \emph{Flask, LangChain, MongoDB}}{Jan 2024}
+      \resumeItemListStart
+        \resumeItem{Implemented an AI mentor enabling file uploads, note summarization, and personalized study guides using \textbf{Python}, GPT-4, Cloud Vision, and MongoDB Atlas Vector Search, cutting manual study-note prep time by \textbf{$\sim$50\%} in trials.}
+        \resumeItem{Placed 4th at Hack the Valley 8 among \textbf{80} teams, showcasing collaborative problem-solving and rapid prototyping skills.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{HomeLab} $|$ \emph{Linux, Docker, Nginx, Cloudflare}}{May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built a personal Linux server secured with SSH key-pair authentication and HTTPS reverse proxying using \textbf{Nginx}, running \textbf{3+} self-hosted services with $>$\textbf{99\%} uptime over several months.}
+        \resumeItem{Deployed \textbf{Dockerized} Node.js applications with PM2 process management and Cloudflare DNS/routing, turning multi-hour manual deploys into minute-level updates.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
+

@@ -1,0 +1,162 @@
+%-------------------------
+% Tailored Resume for NVIDIA Software Engineering Internships (2026)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · 2× Founding Engineer · Systems \& Full-Stack Developer
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Sept 2024 -- Apr 2028}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President’s Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Intro to CS, Algorithm Design, Data Abstraction, Calculus 1 \& 2}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, Go, Java, C++, JavaScript, TypeScript, Bash, PHP, HTML/CSS, Tailwind \\
+     \textbf{Technologies:} Git, Next.js, React, Flask, FastAPI, Docker, AWS, PostgreSQL, Redis, Nginx, Cloudflare R2 \\
+     \textbf{Systems:} Linux, TCP/IP \& DNS fundamentals, reverse proxying, RESTful API design, microservices orchestration
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Cut rendering latency 5× by chunking video jobs across Celery workers with \textbf{Redis} queues, parallelized stages, and resilient retries.}
+        \resumeItem{Containerized \textbf{FastAPI} services and async Celery workers with \textbf{Docker}, shipped via GitHub Actions for predictable releases.}
+        \resumeItem{Delivered real-time collaboration through Clerk auth, WebSockets, \textbf{Redis} pub/sub, and Neon-hosted \textbf{PostgreSQL} to keep multi-user edits consistent.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FTC Robotics}{Sept 2022 -- June 2025}
+      {Senior Software Lead}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Engineered telemetry pipelines aggregating encoder, IMU, and camera data into unified robot state estimation in \textbf{C++} for reliable control loops.}
+        \resumeItem{Designed filtering and validation logic to suppress noisy sensor data, boosting reliability by 20\% and doubling control response speed during competition runs.}
+        \resumeItem{Implemented PID tuning with hardware engineers, improving autonomous navigation accuracy by 70\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Linovation Design}{Summer 2024}
+      {Full Stack Developer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Designed and launched 8 production websites using Next.js/\textbf{TypeScript}, React, Tailwind, and Figma for responsive user experiences.}
+        \resumeItem{Built \textbf{Flask} APIs with JWT auth, database integrations, and \textbf{Docker} deployment across Vercel and MongoDB to harden releases.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{HomeLab} $|$ \emph{Linux, Docker, Nginx, Cloudflare}}{May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Provisioned a \textbf{Linux} server with SSH keys, TLS termination, and \textbf{Nginx} reverse proxying routed through \textbf{Cloudflare} DNS/proxy for secure access.}
+        \resumeItem{Run containerized services with \textbf{Docker} and PM2, adding health checks and centralized logs for quick rollback.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Spotilike} $|$ \emph{Flask, Next.js, TensorFlow, DeepFace}}{June 2025}
+      \resumeItemListStart
+        \resumeItem{Built an AI-driven music discovery app linking emotion embeddings to tracks with \textbf{TensorFlow} and \textbf{DeepFace} inference.}
+        \resumeItem{Served recommendations through \textbf{Flask} APIs and a \textbf{Next.js} frontend integrating Spotify for real-time playback, tuned with batched inference to keep responses snappy.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Skip the Walk} $|$ \emph{Terraform, Commander.js, Slack API}}{Sept 2024}
+      \resumeItemListStart
+        \resumeItem{Built a CLI automating Domino’s ordering and volunteer routing with \textbf{Terraform}-defined workflows and Slack notifications.}
+        \resumeItem{Integrated Mappedin indoor navigation plus retries and per-step logging to keep runs resilient across flaky venue Wi-Fi at \textbf{Hack the North}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,160 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Adapted for Lin Hong
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · Quantitative Research · Algorithm Development
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Waterloo}{Sept 2024 -- Apr 2028}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President's Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Algorithm Design, Data Abstraction, Calculus 1 \& 2, Intro to CS}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, C++, Go, Java, JavaScript, TypeScript, Bash \\
+     \textbf{Technologies:} PyTorch, TensorFlow, NumPy, Pandas, Git, Docker, AWS, PostgreSQL, MongoDB
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FTC Robotics}{Sept 2022 -- June 2025}
+      {Senior Software Lead}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Engineered telemetry pipelines aggregating encoder, IMU, and camera data into unified robot state estimation using \textbf{Python} and \textbf{statistical analysis} techniques.}
+        \resumeItem{Designed signal filtering and validation algorithms to eliminate noisy sensor readings, improving reliability by 20\% and doubling response speed through \textbf{numerical programming} optimizations.}
+        \resumeItem{Implemented PID tuning with hardware engineers, improving autonomous navigation accuracy by 70\% using algorithmic parameter optimization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Optimized a large-scale video rendering pipeline, reducing processing time by 5× through segment-based parallelization and backend optimizations in \textbf{Python}.}
+        \resumeItem{Built scalable REST APIs using FastAPI, Dockerized services, and asynchronous Celery workers orchestrated through Redis for high-performance data processing.}
+        \resumeItem{Implemented real-time synchronization system with WebSockets and Redis pub/sub event broadcasting, enabling efficient data streaming and state management across distributed services.}
+        \resumeItem{Designed and deployed PostgreSQL database schemas with Neon hosting, ensuring data integrity and optimized query performance for large-scale application workloads.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Chess Bot} $|$ \emph{PyTorch, Modal, Python}}{June 2025}
+      \resumeItemListStart
+        \resumeItem{Built an AlphaZero-style chess engine with a unified policy–value network trained via large-scale self-play \textbf{reinforcement learning} using \textbf{PyTorch}.}
+        \resumeItem{Integrated neural priors into Monte Carlo Tree Search (MCTS) to guide node expansion, improving playing strength and convergence stability through \textbf{algorithmic optimization}.}
+        \resumeItem{Ran distributed training and self-play generation on A100/H100 GPUs via Modal, achieving high-throughput RL cycles and automated checkpoint evaluation; reached $\sim$1600 Elo strength.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Spotilike} $|$ \emph{TensorFlow, DeepFace, Python}}{June 2025}
+      \resumeItemListStart
+        \resumeItem{Created an AI-driven music discovery platform using \textbf{TensorFlow} and DeepFace for real-time emotion analysis and song matching.}
+        \resumeItem{Integrated \textbf{machine learning} models with Spotify API and MongoDB for emotion-aware track recommendations based on facial expression analysis.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Lofied} $|$ \emph{Python, torchaudio, Pedalboard}}{May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a \textbf{Python} tool converting Spotify playlists to lo-fi tracks using digital signal processing (DSP) and \textbf{numerical programming} techniques.}
+        \resumeItem{Implemented Basic Pitch for audio-to-sheet-music conversion; won Best Solo Hack \& Top 6 Overall at JamHacks 2025.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+

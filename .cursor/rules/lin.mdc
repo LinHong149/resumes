@@ -1,0 +1,12 @@
+---
+description: "Rules for tailoring resumes specific to Lin Hong"
+alwaysApply: true
+---
+
+- The first section should always be education, and the second should always be skills
+- Always include a tagline under the contact information in the header section
+- The tagline must always include "10× Hackathon Winner"
+- The other tags in the tagline should be tailored based on the job description, highlighting relevant skills/roles (e.g., "Applied Machine Learning Engineer", "Cloud Infrastructure", "Fullstack Engineer", "Software Engineer", "GenAI & LLM Development", "AI/ML Systems", etc.)
+- Format the tagline with tags separated by " · " (middle dot), for example: `\small 10× Hackathon Winner · Applied Machine Learning Engineer · Cloud Infrastructure`
+- Pick and choose which Experience to add. Include at least two, and at most three experiences. Only choose the ones that relate to the job posting the most and tailor it.
+- Change the relevant coursework depending on the job posting.

@@ -1,0 +1,156 @@
+%-------------------------
+% Tailored Resume for NVIDIA Software Engineering Internships (2026)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · Software Engineer · Systems \& Infrastructure Developer
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Waterloo}{Sept 2024 -- Apr 2028}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President's Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Algorithm Design, Data Structures, Operating Systems concepts}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, Go, Java, C++, JavaScript, TypeScript, Bash, SQL \\
+     \textbf{Technologies:} Git, React, FastAPI, Docker, PostgreSQL, Redis, Linux, Nginx, Terraform, PyTorch \\
+     \textbf{Systems:} Distributed systems, container orchestration, automation, debugging, performance optimization, microservices
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented scalable distributed system using \textbf{FastAPI}, \textbf{Docker} containerization, and \textbf{PostgreSQL} relational database, supporting microservices architecture with \textbf{Redis} pub/sub for real-time event broadcasting.}
+        \resumeItem{Optimized large-scale video rendering pipeline by 5× through parallelization with \textbf{Celery} workers, \textbf{Redis} queues, and backend optimizations in \textbf{Python}; implemented scheduling and process control for job orchestration.}
+        \resumeItem{Debugged complex system-level issues in production, troubleshooting storage and data platform tools; automated end-to-end infrastructure deployment with \textbf{Git} version control and GitHub Actions CI/CD pipelines.}
+        \resumeItem{Designed and deployed cloud storage infrastructure using Cloudflare R2 for object storage, implementing container orchestration and virtualization strategies for scalable service deployment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Linovation Design}{Summer 2024}
+      {Full Stack Developer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Designed and launched 8 production websites using \textbf{Next.js}, \textbf{React}, \textbf{JavaScript}, and \textbf{TypeScript}, implementing responsive design patterns and OOP principles for maintainable codebases.}
+        \resumeItem{Built scalable \textbf{Flask} REST APIs with JWT authentication, \textbf{PostgreSQL} and MongoDB database integrations, and automated deployment workflows using \textbf{Docker} containers and \textbf{Git} version control.}
+        \resumeItem{Troubleshot and debugged production issues across frontend and backend systems, optimizing data structures and algorithms for improved performance and user experience.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{HomeLab} $|$ \emph{Linux, Docker, Nginx, Cloudflare}}{May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built personal \textbf{Linux} server with SSH key authentication, HTTPS reverse proxying via \textbf{Nginx}, and \textbf{Docker} containerization for secure service deployment.}
+        \resumeItem{Configured Cloudflare DNS/routing and implemented health checks with centralized logging for infrastructure automation and monitoring.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Chess Bot} $|$ \emph{PyTorch, Modal, Python}}{June 2025}
+      \resumeItemListStart
+        \resumeItem{Built AlphaZero-style chess engine with unified policy–value network trained via large-scale self-play reinforcement learning using \textbf{PyTorch}; integrated neural priors into Monte Carlo Tree Search for improved decision-making.}
+        \resumeItem{Ran distributed training and self-play generation on \textbf{A100}/\textbf{H100} GPUs via Modal, achieving high-throughput RL cycles with automated checkpoint evaluation and validation frameworks.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Skip the Walk} $|$ \emph{Terraform, Commander.js, Slack API}}{Sept 2024}
+      \resumeItemListStart
+        \resumeItem{Developed CLI tool automating Domino's ordering and volunteer routing using \textbf{Terraform} for workflow automation and Slack API integration.}
+        \resumeItem{Integrated Mappedin indoor navigation with retry logic and logging; won Best Use of Terraform at Hack the North 2024.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+

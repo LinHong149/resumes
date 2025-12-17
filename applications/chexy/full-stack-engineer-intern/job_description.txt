@@ -1,0 +1,90 @@
+Full-Stack Engineer Intern
+
+hybrid
+
+Toronto, Ontario, Canada .
+
+internship . July 22, 2025
+
+Description
+
+
+
+**Internships @ Chexy**
+
+
+
+At Chexy, we're building a future where paying rent, tuition, insurance—or any major bill—isn't just another expense. It's a chance to build credit, earn rewards, and take control of your finances.
+
+
+
+Our paid internship program is designed for students and recent grads who want hands-on experience building fintech products that make a real impact. You'll contribute directly to Chexy's platform, receive mentorship from experienced engineers, and grow your skills while helping redefine how Canadians manage their biggest monthly expenses.
+
+
+
+**Eligibility**
+
+
+
+✔ Currently enrolled in a Canadian post-secondary program or bootcamp, or a recent graduate.
+
+
+
+✔ Available to work full-time for a 3-month term
+
+
+
+✔ Located in Ontario, Canada
+
+
+
+✔ Canadian Citizen or Canadian Permanent Resident
+
+
+
+**About the Role**
+
+
+
+As a Full-Stack Software Engineering Intern, you'll join our core engineering team and help shape the future of digital bill payments. From implementing new features to optimizing existing experiences, your work will be seen and used by real customers.
+
+
+
+You'll gain experience across the full stack—working on both frontend and backend projects—while collaborating with engineers, designers, and product managers.
+
+
+
+**In this role, you'll get to:**
+
+
+
+* Build and enhance features across our web and mobile platforms using TypeScript, Next.js, and Tailwind CSS
+
+* Integrate with payment APIs and financial tools to make bill payments seamless
+
+* Work with real-time databases like Firestore and structured data in PostgreSQL
+
+* Contribute to backend services hosted on Google Cloud Platform
+
+* Collaborate in a fast-paced, startup environment where shipping fast and learning fast go hand-in-hand
+
+* Help shape the future of Canada's first tenant-based rewards program
+
+
+
+**You're someone who:**
+
+
+
+* Has hands-on experience building apps using Next.js and Tailwind CSS
+
+* Is confident with TypeScript and JavaScript fundamentals
+
+* Can work with databases like Firestore or PostgreSQL—or is excited to learn
+
+* Thrives in a collaborative team and enjoys owning tasks end-to-end
+
+* Is curious, proactive, and not afraid to ask questions or challenge assumptions
+
+* Communicates clearly and respectfully, even when explaining technical ideas to non-technical folks
+

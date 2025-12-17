@@ -1,0 +1,171 @@
+Analytics Engineering Intern, Summer 2026
+
+Los Gatos, California, United States of America
+
+
+
+Job Posting Date
+
+12-01-2025
+
+Job Requisition ID
+
+JR37461
+
+Teams
+
+Engineering
+
+Work Type
+
+Onsite
+
+Netflix is one of the world's leading entertainment services, with over 300 million paid memberships in over 190 countries enjoying TV series, films and games across a wide variety of genres and languages. Members can play, pause and resume watching as much as they want, anytime, anywhere, and can change their plans at any time.
+
+
+
+The Teams
+
+Analytics Engineering interns will be fully embedded within teams that build tools and services essential for scaling the Netflix application platform to a massive device ecosystem. These teams leverage innovation and scale to drive value on screen and support efficient operational execution. Interns will work on deriving actionable insights from data to ensure high-quality standards, measure product feature reliability, assess device ecosystem health, and enhance engineering operational efficiency. This role involves heavy reliance on cross-functional partnerships, collaborating with software engineers and product managers to enable data collection, improve metric fidelity, and develop technical data products and intelligence systems.
+
+
+
+Who Are You?
+
+You are a curious, collaborative, resourceful, and motivated student who is eager to learn from a team of senior engineers. You possess a passion for problem-solving and are comfortable tackling complex, open-ended challenges using data-driven solutions.
+
+
+
+Must-Haves
+
+
+
+Currently enrolled in a full-time accredited academic program (M.S., or Ph.D.) in Computer Science, Engineering, Data Science, or a related technical field graduating in December 2026, Summer 2027 or later.
+
+
+
+To be intern-eligible, you must be returning to school for one semester or quarter post-Summer internship.
+
+
+
+Hands-on keyboard experience with data analysis.
+
+
+
+High proficiency in the standard data science tech stack.
+
+
+
+Experience leveraging distributed systems for large-scale data processing.
+
+
+
+Proficiency in SQL.
+
+
+
+Experienced in Python or Java.
+
+
+
+Hands-on experience building intuitive schemas and data models for datasets
+
+
+
+Excellent communication and collaboration skills.
+
+
+
+
+
+Nice-to-Haves
+
+
+
+Experience leveraging statistical inference and machine learning models to present actionable insights.
+
+
+
+Working knowledge of data visualization tools (e.g., Tableau, Plotly, Matplotlib).
+
+
+
+Ability to convey complex data insights to stakeholders of varying technical backgrounds.
+
+
+
+A positive attitude that welcomes opportunities to give and receive candid feedback.
+
+
+
+A tendency to perceive ambiguity as an opportunity to explore possibilities.
+
+
+
+Excitement about security or complex problem domains
+
+
+
+
+
+What You'll Do
+
+As an Analytics Engineering Intern, you will have the opportunity to take ownership of an end-to-end analytics project or tool. Your responsibilities will typically include:
+
+
+
+Designing, building, and maintaining data pipelines to collect, process, and analyze large and complex data sets from various sources.
+
+
+
+Defining foundational data models and working toward the productization of the final analytical tool.
+
+
+
+Analyzing request patterns, identifying new signals, performing anomaly detection, and recommending adjustments based on quantified impact.
+
+
+
+Creating insightful data visualizations and dashboards using tools like Tableau to help stakeholders easily understand and act upon data.
+
+
+
+Collaborating with engineers during the development process to gather feedback and iterate on design improvements.
+
+
+
+Communicating key insights and developing dashboards to cascade them to a wide range of stakeholders across the organization.
+
+ 
+
+
+
+The Summer Internship
+
+
+
+At Netflix, we offer a personalized experience for interns, and our aim is to offer an experience that mimics what it is like to actually work here. We match qualified interns with projects and groups based on interests and skill sets, and fully embed interns within those groups for the summer. Netflix is a unique place to work and we live by our values, so it's worth learning more about our culture.
+
+
+
+Internships are typically 12 weeks long. Conditions permitting, our summer internships will be located in our Los Gatos, CA office, or in our Los Angeles, CA office, depending on the team.
+
+
+
+Our culture is unique, and we live by our values. For more information on what it's like to work at Netflix, please take a look at our culture memo.
+
+
+
+Inclusion is a Netflix value and we strive to host a meaningful interview experience for all candidates. If you want an accommodation/adjustment for a disability or any other reason during the hiring process, please send a request to your recruiting partner.
+
+
+
+We are an equal-opportunity employer and celebrate diversity, recognizing that diversity builds stronger teams. We approach diversity and inclusion seriously and thoughtfully. We do not discriminate on the basis of race, religion, color, ancestry, national origin, caste, sex, sexual orientation, gender, gender identity or expression, age, disability, medical condition, pregnancy, genetic makeup, marital status, or military service.
+
+
+
+Job is open for no less than 7 days and will be removed when the position is filled.
+
+
+
+
