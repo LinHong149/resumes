@@ -1,0 +1,160 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Adapted for Lin Hong
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Lin Hong} \\ \vspace{1pt}
+    \small \href{mailto:linlin.hong1@gmail.com}{\underline{linlin.hong1@gmail.com}} $|$
+    \href{https://github.com/LinHong149}{\underline{github.com/LinHong149}} $|$
+    \href{https://linkedin.com/in/linhongdev}{\underline{linkedin.com/in/linhongdev}} $|$
+    \href{https://linhong.dev}{\underline{linhong.dev}} \\
+    \vspace{3pt}
+    \small 10× Hackathon Winner · High-Performance Systems Engineer · Machine Learning \& Distributed Computing
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Waterloo}{Sept 2024 -- Apr 2028}
+      {Bachelor of Computer Science (Co-op)}{}
+      \resumeItemListStart
+        \resumeItem{President's Scholarship of Distinction, Ted Rogers Future Leaders Scholarship for Women}
+        \resumeItem{Relevant coursework: Algorithm Design, Data Structures, Statistics, Machine Learning}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} \textbf{Python}, \textbf{C++}, \textbf{Java}, Go, JavaScript, TypeScript, Bash, SQL \\
+     \textbf{ML/AI Frameworks:} \textbf{PyTorch}, \textbf{TensorFlow}, scikit-learn, NumPy, Pandas \\
+     \textbf{Systems \& Infrastructure:} \textbf{distributed computing}, \textbf{high-performance systems}, Docker, Kubernetes, AWS, Redis, PostgreSQL, MongoDB \\
+     \textbf{Development Tools:} Git, FastAPI, Flask, REST APIs, CI/CD, Linux, \textbf{systems architecture}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Walnote AI}{July 2025 -- Present}
+      {Founding Engineer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Optimized \textbf{high-performance} video rendering pipeline using \textbf{distributed computing}, reducing processing time by \textbf{5×} (from \textbf{2+ hours} to \textbf{24 minutes}) and cutting infrastructure costs by \textbf{$\sim$60\%} through \textbf{segment-based parallelization}.}
+        \resumeItem{Built scalable \textbf{data pipelines} processing \textbf{10,000+} events/second with \textbf{$<$10ms} p95 latency using \textbf{Redis} pub/sub and \textbf{PostgreSQL}, reducing API response times by \textbf{40\%} and enabling \textbf{rapid deployment cycles}.}
+        \resumeItem{Architected \textbf{systems} using \textbf{Python} and \textbf{FastAPI} with \textbf{asynchronous workers}, collaborating in \textbf{small teams} to design and implement production-ready \textbf{platforms} with CI/CD automation and code review processes.}
+        \resumeItem{Implemented real-time WebSocket connections and event broadcasting systems, enabling \textbf{real-time} synchronization across distributed services and improving user experience through \textbf{low-latency} communication protocols.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Linovation Design}{Summer 2024}
+      {Full Stack Developer}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Delivered \textbf{8} production marketing sites using \textbf{React}, \textbf{Next.js}, and \textbf{TypeScript}, reducing client website load times by \textbf{$\sim$40\%} through optimized code and \textbf{high-performance} asset delivery.}
+        \resumeItem{Built \textbf{Flask} APIs with authentication and database integrations, processing \textbf{1,000+} daily requests with \textbf{$<$50ms} average response time, deployed using \textbf{Docker} and MongoDB for scalable client solutions.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{HomeLab} $|$ \emph{Linux, Docker, Nginx, \textbf{high-performance systems}}}{May 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built and maintained personal \textbf{Linux server} running \textbf{3+} self-hosted services with \textbf{$>$99\%} uptime, achieving \textbf{$<$10ms} response times through \textbf{Nginx} reverse proxying and optimized \textbf{systems architecture}.}
+        \resumeItem{Containerized applications with \textbf{Docker} and PM2, reducing deployment time from \textbf{hours} to \textbf{minutes} and enabling \textbf{high-performance} load balancing across multiple services with zero-downtime updates.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Lofied} $|$ \emph{\textbf{Python}, torchaudio, \textbf{Docker}, \textbf{data processing}}}{May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed \textbf{Python} tool converting Spotify playlists to lo-fi tracks using \textbf{DSP} algorithms, processing \textbf{dozens} of tracks per run with fully automated pipelines and \textbf{Docker}-based deployment for scalable execution.}
+        \resumeItem{Won Best Solo Hack \& Top 6 Overall out of \textbf{200+} hackers at JamHacks 2025, demonstrating \textbf{high-performance} audio processing and end-to-end \textbf{systems} design from concept to production.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Skip the Walk} $|$ \emph{Terraform, Commander.js, \textbf{automation}, \textbf{systems architecture}}}{Sept 2024}
+      \resumeItemListStart
+        \resumeItem{Built CLI automation tool using \textbf{Node.js} and \textbf{Terraform} for workflow automation, processing \textbf{100+} orders during Hack the North and reducing manual routing time by \textbf{$\sim$75\%} through \textbf{automated} systems.}
+        \resumeItem{Integrated Slack API and Mappedin for real-time coordination, winning Best Use of Terraform and demonstrating \textbf{systems architecture} skills in \textbf{small teams} with rapid iteration cycles.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
